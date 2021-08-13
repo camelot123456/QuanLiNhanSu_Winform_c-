@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using INDIVIDUAL_PROJECT_CS414SC_2020S.repository;
 using INDIVIDUAL_PROJECT_CS414SC_2020S.GUI;
 using System.Data;
+using System.Windows.Forms;
 
 namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 {
@@ -13,43 +14,48 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
     {
         UserRepository userRepository;
         RoleRepository roleRepository;
-        frm_login frm_Login;
-        frm_main frm_Main;
+        HomeService homeService;
+        frm_login _Login;
+        frm_main _Main;
 
-        public Authentication(frm_login frm_Login, frm_main frm_Main)
+        public Authentication(frm_login _Login, frm_main _Main)
         {
-            this.frm_Login = frm_Login;
-            this.frm_Main = frm_Main;
+            this._Login = _Login;
+            this._Main = _Main;
+            homeService = new HomeService(this._Main);
             roleRepository = new RoleRepository();
             userRepository = new UserRepository();
         }
 
         public void handlerLogin()
         {
-            DataTable dt = userRepository.findByUsernameAndPassword(frm_Login.txt_user.Text.ToUpper().Trim(), frm_Login.txt_pass.Text.Trim());
+            DataTable dt = userRepository.findByUsernameAndPassword(_Login.txt_user.Text.ToUpper().Trim(), _Login.txt_pass.Text.Trim());
             if (dt.Rows.Count == 0)
             {
-                frm_Login.lbl_warning_login.Text = @"Tên đăng nhập hoặc mật khẩu không đúng !!!";
-                SystemConstant.USERNAME = null;
-                SystemConstant.FULLNAME = null;
-                SystemConstant.PASSWORD = null;
-                SystemConstant.ROLES.Clear();
-                frm_Login.Show();
-                frm_Main.Hide();
+                homeService.contextLogout();
+                _Login.lbl_warning_login.Text = "Tên đăng nhập hoặc mật khẩu không chính xác !";
+                _Login.Show();
+                _Main.Hide();
             }
             else
             {
-                frm_Login.lbl_warning_login.Text = "";
+                _Login.lbl_warning_login.Text = "";
                 SystemConstant.USERNAME = dt.Rows[0]["USERNAME"].ToString();
                 SystemConstant.FULLNAME = dt.Rows[0]["FULLNAME"].ToString();
                 SystemConstant.PASSWORD = dt.Rows[0]["PASSWORD"].ToString();
+                SystemConstant.AVATAR = dt.Rows[0]["AVATAR"].ToString();
+                SystemConstant.ID = dt.Rows[0]["IDUSER"].ToString();
                 dt = roleRepository.findRoleCodeByUsername(SystemConstant.USERNAME);
                 foreach (DataRow row in dt.Rows)
                 {
                     SystemConstant.ROLES.Add(row["ROLECODE"].ToString());
                 }
-                frm_Main.Show();
-                frm_Login.Hide();
+                _Main.btn_logout.Visible = true;
+                _Main.lbl_fullname.Text = SystemConstant.FULLNAME;
+                homeService.handlerBtnCloseChildForm();
+                _Login.Hide();
+                _Main.Show();
+
             }
         }
     }

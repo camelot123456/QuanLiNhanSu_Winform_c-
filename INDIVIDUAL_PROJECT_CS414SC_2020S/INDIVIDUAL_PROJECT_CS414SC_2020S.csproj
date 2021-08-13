@@ -104,6 +104,12 @@
     <Compile Include="GUI\frm_login.Designer.cs">
       <DependentUpon>frm_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_myAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_myAcc.Designer.cs">
+      <DependentUpon>frm_myAcc.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_PR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +123,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repository\AbstractDAO.cs" />
+    <Compile Include="repository\HRRepository.cs" />
     <Compile Include="repository\RoleRepository.cs" />
     <Compile Include="repository\UserRepository.cs" />
     <Compile Include="service\Authentication.cs" />
+    <Compile Include="service\HomeService.cs" />
+    <Compile Include="service\HRService.cs" />
     <Compile Include="service\RoleService.cs" />
     <Compile Include="service\UserService.cs" />
     <Compile Include="SystemConstant.cs" />
@@ -143,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_myAcc.resx">
+      <DependentUpon>frm_myAcc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_PR.resx">
       <DependentUpon>frm_PR.cs</DependentUpon>
@@ -170,9 +182,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="img\avatar\account\" />
     <Folder Include="mapper\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\avatar\staff\s.jpg" />
     <Content Include="img\icon_system\logout-icon.png" />
     <Content Include="img\icon_system\modify-key-icon %281%29.png" />
     <Content Include="img\icon_system\modify-key-icon.png" />
@@ -197,6 +211,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

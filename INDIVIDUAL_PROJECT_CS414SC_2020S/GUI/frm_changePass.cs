@@ -21,24 +21,24 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
             userService = new UserService(this);
         }
 
-        private void btn_change_Click(object sender, EventArgs e)
-        {
-            userService.validateChangePass();
-        }
-
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             userService.handlerCancelBtn();
         }
 
-        private void txt_pass_old_Validated(object sender, EventArgs e)
+        private void txt_pass_old_Validated_1(object sender, EventArgs e)
         {
             userService.handlerValidatePassOld();
         }
 
-        private void txt_pass_check_Validated(object sender, EventArgs e)
+        private void txt_pass_check_Validated_1(object sender, EventArgs e)
         {
             userService.handlerValidatePassNew();
+        }
+
+        private void btn_save_Click_1(object sender, EventArgs e)
+        {
+            userService.validateChangePass();
         }
     }
 }

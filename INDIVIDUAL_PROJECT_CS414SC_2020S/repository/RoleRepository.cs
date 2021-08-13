@@ -40,7 +40,6 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
             return dao.queryForList(sql);
         }
 
-
         public DataTable findRoleCodeByUsername(string username)
         {
             string sql = "SELECT * FROM [ROLE] WHERE USERNAME = '" + username + "'";
@@ -50,6 +49,18 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
         public int save(string username, string roleCode)
         {
             string sql = "INSERT INTO [ROLE] VALUES('" + username + "', '" + roleCode + "')";
+            return dao.executeUpdate(sql);
+        }
+
+        public int updateOneRoleCodedById(string roleCode, string idRole)
+        {
+            string sql = "UPDATE [ROLE] SET ROLECODE = '" + roleCode + "' WHERE IDROLE = '" + idRole + "'";
+            return dao.executeUpdate(sql);
+        }
+
+        public int deleteOne(string idRole)
+        {
+            string sql = "DELETE FROM [ROLE] WHERE IDROLE = '" + idRole + "'";
             return dao.executeUpdate(sql);
         }
     }

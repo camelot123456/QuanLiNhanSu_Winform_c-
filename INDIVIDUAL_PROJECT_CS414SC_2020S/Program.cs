@@ -1,4 +1,5 @@
-﻿using System;
+﻿using INDIVIDUAL_PROJECT_CS414SC_2020S.GUI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_login());
+            Application.Run(new frm_main());
         }
     }
 }

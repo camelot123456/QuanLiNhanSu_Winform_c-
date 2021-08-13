@@ -13,22 +13,22 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S
 {
     public partial class frm_login : Form
     {
-        Authentication userService;
+        Authentication authentication;
 
         public frm_login()
         {
-            userService = new Authentication(this, new frm_main());
+            authentication = new Authentication(this, new frm_main());
             InitializeComponent();
         }
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            userService.handlerLogin();
+            authentication.handlerLogin();
         }
 
-        internal void ShowInTaskbar()
+        private void frm_login_FormClosed(object sender, FormClosedEventArgs e)
         {
-            throw new NotImplementedException();
+            Application.Exit();
         }
     }
 }

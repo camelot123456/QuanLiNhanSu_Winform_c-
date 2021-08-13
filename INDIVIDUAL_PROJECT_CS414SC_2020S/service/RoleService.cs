@@ -13,6 +13,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
     {
 
         RoleRepository roleRepository;
+        
         frm_accList _AccList;
 
         public RoleService(frm_accList accList)
@@ -23,7 +24,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 
         public void findUserAndRole()
         {
-            _AccList.dataGridView1.DataSource = roleRepository.findUserAndRole();
+            _AccList.dataGridView_roleList.DataSource = roleRepository.findUserAndRole();
         }
 
         public void loadComboBoxUsername()
@@ -40,19 +41,57 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             _AccList.cb_roleCode.ValueMember = "ROLECODE";
         }
 
+        public void loadComboBoxRoleId()
+        {
+            _AccList.cb_maQuyen.DataSource = roleRepository.find();
+            _AccList.cb_maQuyen.DisplayMember = "IDROLE";
+            _AccList.cb_maQuyen.ValueMember = "IDROLE";
+        }
+
         public void handlerBtnAdd()
         {
-            frm_createAccount _CreateAccount;
-            if (Application.OpenForms["frm_createAccount"] == null)
+            int k = roleRepository.save(_AccList.cb_username.Text, _AccList.cb_roleCode.Text);
+            if (k == 0)
             {
-                _CreateAccount = new frm_createAccount();
-                _CreateAccount.MdiParent = frm_main.ActiveForm;
-                _CreateAccount.Show();
+                MessageBox.Show("Thêm thất bại");
             }
             else
             {
-                _CreateAccount = new frm_createAccount();
-                Application.OpenForms["frm_createAccount"].Activate();
+                MessageBox.Show("Thêm thành công");
+            }
+        }
+
+        public void handlerBtnUpdate()
+        {
+            int k = roleRepository.updateOneRoleCodedById(_AccList.cb_roleCode.Text, _AccList.cb_maQuyen.Text);
+            if (k == 0)
+            {
+                MessageBox.Show("Cập nhập thất bại");
+            }
+            else
+            {
+                MessageBox.Show("Cập nhập thành công");
+            }
+        }
+
+        public void handlerBtnDelete()
+        {
+            DialogResult d = MessageBox.Show("Bạn có muốn xóa không ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (d == DialogResult.Yes)
+            {
+                int k = roleRepository.deleteOne(_AccList.cb_maQuyen.Text);
+                if (k == 0)
+                {
+                    MessageBox.Show("Xóa thất bại");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thành công");
+                }
+            }
+            else
+            {
+                return;
             }
         }
     }

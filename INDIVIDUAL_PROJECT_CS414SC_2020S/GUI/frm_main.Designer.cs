@@ -28,302 +28,290 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_main));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.dashboadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nhânSựToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nhânSựToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.lươngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tạoTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripDropDownButton_username = new System.Windows.Forms.ToolStripDropDownButton();
-            this.thôngTinNgườiDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
-            this.menuStrip1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.btn_logout = new System.Windows.Forms.Button();
+            this.btn_help = new System.Windows.Forms.Button();
+            this.btn_role = new System.Windows.Forms.Button();
+            this.btn_pr = new System.Windows.Forms.Button();
+            this.btn_hr = new System.Windows.Forms.Button();
+            this.btn_dashboard = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_id = new System.Windows.Forms.Label();
+            this.lbl_fullname = new System.Windows.Forms.Label();
+            this.pb_avatar = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCloseChild = new System.Windows.Forms.Button();
+            this.lbl_title = new System.Windows.Forms.Label();
+            this.panelDesktopMain = new System.Windows.Forms.Panel();
+            this.panelMenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // panelMenu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dashboadToolStripMenuItem,
-            this.nhânSựToolStripMenuItem,
-            this.tàiKhoảnToolStripMenuItem,
-            this.trợGiúpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 29);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(50)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.btn_logout);
+            this.panelMenu.Controls.Add(this.btn_help);
+            this.panelMenu.Controls.Add(this.btn_role);
+            this.panelMenu.Controls.Add(this.btn_pr);
+            this.panelMenu.Controls.Add(this.btn_hr);
+            this.panelMenu.Controls.Add(this.btn_dashboard);
+            this.panelMenu.Controls.Add(this.panelLogo);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(301, 561);
+            this.panelMenu.TabIndex = 1;
             // 
-            // dashboadToolStripMenuItem
+            // btn_logout
             // 
-            this.dashboadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.dashboadToolStripMenuItem.Name = "dashboadToolStripMenuItem";
-            this.dashboadToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
-            this.dashboadToolStripMenuItem.Text = "&Thống kê";
-            this.dashboadToolStripMenuItem.Click += new System.EventHandler(this.dashboadToolStripMenuItem_Click);
+            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_logout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_logout.FlatAppearance.BorderSize = 0;
+            this.btn_logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_logout.Location = new System.Drawing.Point(0, 450);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(301, 70);
+            this.btn_logout.TabIndex = 9;
+            this.btn_logout.Text = "Đăng xuất";
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
-            // nhânSựToolStripMenuItem
+            // btn_help
             // 
-            this.nhânSựToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nhânSựToolStripMenuItem1,
-            this.lươngToolStripMenuItem,
-            this.tạoTàiKhoảnToolStripMenuItem});
-            this.nhânSựToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.nhânSựToolStripMenuItem.Name = "nhânSựToolStripMenuItem";
-            this.nhânSựToolStripMenuItem.Size = new System.Drawing.Size(76, 25);
-            this.nhânSựToolStripMenuItem.Text = "&Quản lý";
+            this.btn_help.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_help.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_help.FlatAppearance.BorderSize = 0;
+            this.btn_help.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
+            this.btn_help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_help.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_help.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_help.Location = new System.Drawing.Point(0, 380);
+            this.btn_help.Name = "btn_help";
+            this.btn_help.Size = new System.Drawing.Size(301, 70);
+            this.btn_help.TabIndex = 7;
+            this.btn_help.Text = "Trợ giúp";
+            this.btn_help.UseVisualStyleBackColor = true;
+            this.btn_help.Click += new System.EventHandler(this.btn_help_Click);
             // 
-            // nhânSựToolStripMenuItem1
+            // btn_role
             // 
-            this.nhânSựToolStripMenuItem1.Name = "nhânSựToolStripMenuItem1";
-            this.nhânSựToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
-            this.nhânSựToolStripMenuItem1.Text = "&Nhân sự";
-            this.nhânSựToolStripMenuItem1.Click += new System.EventHandler(this.nhânSựToolStripMenuItem1_Click);
+            this.btn_role.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_role.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_role.FlatAppearance.BorderSize = 0;
+            this.btn_role.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
+            this.btn_role.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_role.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_role.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_role.Location = new System.Drawing.Point(0, 310);
+            this.btn_role.Name = "btn_role";
+            this.btn_role.Size = new System.Drawing.Size(301, 70);
+            this.btn_role.TabIndex = 6;
+            this.btn_role.Text = "Quản lý quyền";
+            this.btn_role.UseVisualStyleBackColor = true;
+            this.btn_role.Click += new System.EventHandler(this.btn_role_Click);
             // 
-            // lươngToolStripMenuItem
+            // btn_pr
             // 
-            this.lươngToolStripMenuItem.Name = "lươngToolStripMenuItem";
-            this.lươngToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.lươngToolStripMenuItem.Text = "&Lương";
-            this.lươngToolStripMenuItem.Click += new System.EventHandler(this.lươngToolStripMenuItem_Click);
+            this.btn_pr.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_pr.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_pr.FlatAppearance.BorderSize = 0;
+            this.btn_pr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
+            this.btn_pr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_pr.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pr.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_pr.Location = new System.Drawing.Point(0, 240);
+            this.btn_pr.Name = "btn_pr";
+            this.btn_pr.Size = new System.Drawing.Size(301, 70);
+            this.btn_pr.TabIndex = 5;
+            this.btn_pr.Text = "Quản lý lương";
+            this.btn_pr.UseVisualStyleBackColor = true;
+            this.btn_pr.Click += new System.EventHandler(this.btn_pr_Click);
             // 
-            // tạoTàiKhoảnToolStripMenuItem
+            // btn_hr
             // 
-            this.tạoTàiKhoảnToolStripMenuItem.Name = "tạoTàiKhoảnToolStripMenuItem";
-            this.tạoTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.tạoTàiKhoảnToolStripMenuItem.Text = "Tạo tài khoản";
-            this.tạoTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.tạoTàiKhoảnToolStripMenuItem_Click);
+            this.btn_hr.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_hr.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_hr.FlatAppearance.BorderSize = 0;
+            this.btn_hr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
+            this.btn_hr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_hr.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_hr.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_hr.Location = new System.Drawing.Point(0, 170);
+            this.btn_hr.Name = "btn_hr";
+            this.btn_hr.Size = new System.Drawing.Size(301, 70);
+            this.btn_hr.TabIndex = 4;
+            this.btn_hr.Text = "Quản lý nhân sự";
+            this.btn_hr.UseVisualStyleBackColor = true;
+            this.btn_hr.Click += new System.EventHandler(this.btn_hr_Click);
             // 
-            // trợGiúpToolStripMenuItem
+            // btn_dashboard
             // 
-            this.trợGiúpToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(80, 25);
-            this.trợGiúpToolStripMenuItem.Text = "Trợ giúp";
+            this.btn_dashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_dashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_dashboard.FlatAppearance.BorderSize = 0;
+            this.btn_dashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
+            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dashboard.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dashboard.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_dashboard.Location = new System.Drawing.Point(0, 100);
+            this.btn_dashboard.Name = "btn_dashboard";
+            this.btn_dashboard.Size = new System.Drawing.Size(301, 70);
+            this.btn_dashboard.TabIndex = 3;
+            this.btn_dashboard.Text = "Dashboard";
+            this.btn_dashboard.UseVisualStyleBackColor = true;
+            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
             // 
-            // statusStrip1
+            // panelLogo
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(87)))), ((int)(((byte)(21)))));
+            this.panelLogo.Controls.Add(this.panel2);
+            this.panelLogo.Controls.Add(this.pb_avatar);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(301, 100);
+            this.panelLogo.TabIndex = 2;
             // 
-            // toolStripStatusLabel1
+            // panel2
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(31, 17);
-            this.toolStripStatusLabel1.Text = "time";
+            this.panel2.Controls.Add(this.lbl_id);
+            this.panel2.Controls.Add(this.lbl_fullname);
+            this.panel2.Location = new System.Drawing.Point(99, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(196, 80);
+            this.panel2.TabIndex = 1;
             // 
-            // timer1
+            // lbl_id
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.lbl_id.AutoSize = true;
+            this.lbl_id.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_id.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_id.Location = new System.Drawing.Point(3, 41);
+            this.lbl_id.Name = "lbl_id";
+            this.lbl_id.Size = new System.Drawing.Size(38, 13);
+            this.lbl_id.TabIndex = 0;
+            this.lbl_id.Text = "label1";
             // 
-            // toolStrip1
+            // lbl_fullname
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripDropDownButton_username,
-            this.toolStripButton1,
-            this.toolStripLabel1,
-            this.toolStripLabel2,
-            this.toolStripButton2,
-            this.toolStripButton3,
-            this.toolStripButton4,
-            this.toolStripSplitButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 29);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 28);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
+            this.lbl_fullname.AutoSize = true;
+            this.lbl_fullname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fullname.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_fullname.Location = new System.Drawing.Point(3, 10);
+            this.lbl_fullname.Name = "lbl_fullname";
+            this.lbl_fullname.Size = new System.Drawing.Size(38, 13);
+            this.lbl_fullname.TabIndex = 0;
+            this.lbl_fullname.Text = "label1";
             // 
-            // toolStripDropDownButton_username
+            // pb_avatar
             // 
-            this.toolStripDropDownButton_username.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripDropDownButton_username.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton_username.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thôngTinNgườiDùngToolStripMenuItem,
-            this.đổiMậtKhẩuToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.đăngXuấtToolStripMenuItem});
-            this.toolStripDropDownButton_username.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.toolStripDropDownButton_username.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton_username.Image")));
-            this.toolStripDropDownButton_username.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton_username.Name = "toolStripDropDownButton_username";
-            this.toolStripDropDownButton_username.Size = new System.Drawing.Size(213, 25);
-            this.toolStripDropDownButton_username.Text = "toolStripDropDownButton1";
+            this.pb_avatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_avatar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_avatar.Location = new System.Drawing.Point(12, 12);
+            this.pb_avatar.Name = "pb_avatar";
+            this.pb_avatar.Size = new System.Drawing.Size(80, 80);
+            this.pb_avatar.TabIndex = 0;
+            this.pb_avatar.TabStop = false;
+            this.pb_avatar.Click += new System.EventHandler(this.pb_avatar_Click);
             // 
-            // thôngTinNgườiDùngToolStripMenuItem
+            // panel1
             // 
-            this.thôngTinNgườiDùngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thôngTinNgườiDùngToolStripMenuItem.Image")));
-            this.thôngTinNgườiDùngToolStripMenuItem.Name = "thôngTinNgườiDùngToolStripMenuItem";
-            this.thôngTinNgườiDùngToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
-            this.thôngTinNgườiDùngToolStripMenuItem.Text = "Thông tin người dùng";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(28)))));
+            this.panel1.Controls.Add(this.btnCloseChild);
+            this.panel1.Controls.Add(this.lbl_title);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Location = new System.Drawing.Point(301, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(720, 100);
+            this.panel1.TabIndex = 2;
             // 
-            // đổiMậtKhẩuToolStripMenuItem
+            // btnCloseChild
             // 
-            this.đổiMậtKhẩuToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đổiMậtKhẩuToolStripMenuItem.Image")));
-            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
-            this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
-            this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
+            this.btnCloseChild.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCloseChild.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCloseChild.FlatAppearance.BorderSize = 0;
+            this.btnCloseChild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseChild.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseChild.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCloseChild.Location = new System.Drawing.Point(0, 0);
+            this.btnCloseChild.Name = "btnCloseChild";
+            this.btnCloseChild.Size = new System.Drawing.Size(25, 100);
+            this.btnCloseChild.TabIndex = 1;
+            this.btnCloseChild.Text = "X";
+            this.btnCloseChild.UseVisualStyleBackColor = true;
+            this.btnCloseChild.Click += new System.EventHandler(this.btnCloseChild_Click);
             // 
-            // toolStripSeparator1
+            // lbl_title
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(228, 6);
+            this.lbl_title.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_title.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_title.Location = new System.Drawing.Point(346, 34);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(114, 28);
+            this.lbl_title.TabIndex = 0;
+            this.lbl_title.Text = "Dashboard";
             // 
-            // đăngXuấtToolStripMenuItem
+            // panelDesktopMain
             // 
-            this.đăngXuấtToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đăngXuấtToolStripMenuItem.Image")));
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
-            this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
-            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 25);
-            this.toolStripButton1.Text = "toolStripButton1";
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(72, 25);
-            this.toolStripLabel1.Text = "Xin chào,";
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(0, 25);
-            this.toolStripLabel2.Text = "toolStripLabel2";
-            // 
-            // tàiKhoảnToolStripMenuItem
-            // 
-            this.tàiKhoảnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(87, 25);
-            this.tàiKhoảnToolStripMenuItem.Text = "Tài khoản";
-            this.tàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.tàiKhoảnToolStripMenuItem_Click);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 25);
-            this.toolStripButton2.Text = "toolStripButton2";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 25);
-            this.toolStripButton3.Text = "toolStripButton3";
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(23, 25);
-            this.toolStripButton4.Text = "toolStripButton4";
-            // 
-            // toolStripSplitButton1
-            // 
-            this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
-            this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(149, 25);
-            this.toolStripSplitButton1.Text = "toolStripSplitButton1";
+            this.panelDesktopMain.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panelDesktopMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopMain.Location = new System.Drawing.Point(301, 100);
+            this.panelDesktopMain.Name = "panelDesktopMain";
+            this.panelDesktopMain.Size = new System.Drawing.Size(720, 461);
+            this.panelDesktopMain.TabIndex = 3;
             // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.menuStrip1);
-            this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.ClientSize = new System.Drawing.Size(1021, 561);
+            this.ControlBox = false;
+            this.Controls.Add(this.panelDesktopMain);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMenu);
             this.Name = "frm_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "QUẢN LÝ NHÂN SỰ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_main_FormClosing);
             this.Load += new System.EventHandler(this.frm_main_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem dashboadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nhânSựToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nhânSựToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem lươngToolStripMenuItem;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripMenuItem tạoTàiKhoảnToolStripMenuItem;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton_username;
-        private System.Windows.Forms.ToolStripMenuItem thôngTinNgườiDùngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.ToolStripMenuItem tàiKhoảnToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
+        public System.Windows.Forms.Panel panelMenu;
+        public System.Windows.Forms.Button btn_help;
+        public System.Windows.Forms.Button btn_role;
+        public System.Windows.Forms.Button btn_pr;
+        public System.Windows.Forms.Button btn_hr;
+        public System.Windows.Forms.Button btn_dashboard;
+        public System.Windows.Forms.Panel panelLogo;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Label lbl_title;
+        public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Label lbl_fullname;
+        public System.Windows.Forms.PictureBox pb_avatar;
+        public System.Windows.Forms.Button btnCloseChild;
+        public System.Windows.Forms.Panel panelDesktopMain;
+        public System.Windows.Forms.Label lbl_id;
+        public System.Windows.Forms.Button btn_logout;
     }
 }

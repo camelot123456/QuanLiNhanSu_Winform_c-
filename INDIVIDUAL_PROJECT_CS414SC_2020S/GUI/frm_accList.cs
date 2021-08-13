@@ -14,10 +14,12 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
     public partial class frm_accList : Form
     {
         RoleService roleService;
+        HomeService homeService;
 
         public frm_accList()
         {
             roleService = new RoleService(this);
+            homeService = new HomeService(new frm_main());
             InitializeComponent();
         }
 
@@ -26,12 +28,28 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
             roleService.findUserAndRole();
             roleService.loadComboBoxRoleCode();
             roleService.loadComboBoxUsername();
+            roleService.loadComboBoxRoleId();
         }
 
         private void btn_add_Click(object sender, EventArgs e)
         {
             roleService.handlerBtnAdd();
             roleService.findUserAndRole();
+            homeService.openChildForms(new frm_dashboard());
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            roleService.handlerBtnUpdate();
+            roleService.findUserAndRole();
+            homeService.openChildForms(new frm_accList());
+        }
+
+        private void btn_del_Click(object sender, EventArgs e)
+        {
+            roleService.handlerBtnDelete();
+            roleService.findUserAndRole();
+            homeService.openChildForms(new frm_accList());
         }
     }
 }

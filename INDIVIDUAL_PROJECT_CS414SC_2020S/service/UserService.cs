@@ -3,6 +3,7 @@ using INDIVIDUAL_PROJECT_CS414SC_2020S.repository;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
         UserRepository userRepository;
         frm_changePass _changePass;
         frm_createAccount _CreateAccount;
+        frm_myAcc _MyAcc;
         bool is_username = false;
         bool is_password = false;
         bool is_passOldChange = false;
@@ -26,10 +28,33 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             this._changePass = _changePass;
         }
 
+        public UserService(frm_myAcc _MyAcc)
+        {
+            userRepository = new UserRepository();
+            this._MyAcc = _MyAcc;
+        }
+
         public UserService(frm_createAccount createAccount)
         {
             _CreateAccount = createAccount;
             userRepository = new UserRepository();
+        }
+
+        public void updateOneFullnameAndAvatarByUsername()
+        {
+            DialogResult d = MessageBox.Show("Bạn có muốn cập nhập thông tin ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (d == DialogResult.Yes)
+            {
+                _MyAcc.pb_avatar.Image.Save(SystemConstant.PATH_BASE_ACCOUNT + _MyAcc.txt_avatar.Text);
+                userRepository.updateOneFullnameAndAvatarByUsername
+                (
+                    _MyAcc.txt_fullname.Text,
+                    SystemConstant.PATH_BASE_ACCOUNT + _MyAcc.txt_avatar.Text,
+                    SystemConstant.USERNAME
+                );
+                MessageBox.Show("Cập nhập thông tin thành công\n");
+            }
+            else return;
         }
 
         public void validateChangePass()
@@ -41,7 +66,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                     try
                     {
                         userRepository.updateOnePasswordByUsername(_changePass.txt_pass_check.Text, SystemConstant.USERNAME);
-                        MessageBox.Show("Đổi mật khẩu thành công");
+                        MessageBox.Show("Đổi mật khẩu thành công\nSẽ có hiệu lực sau lần đăng nhập tiếp theo");
                         _changePass.Close();
                     }
                     catch (Exception e)
@@ -119,8 +144,6 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             }
         }
 
-
-
         public void handlerValidateUsername()
         {
             bool k = false;
@@ -157,6 +180,17 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             {
                 _CreateAccount.lbl_checkPass.Text = "";
                 is_password = true;
+            }
+        }
+
+        public void handlerUploadImg()
+        {
+            OpenFileDialog OFD = new OpenFileDialog();
+            //OFD.Title = "Hãy chọn ảnh";
+            OFD.Filter = "Hãy chọn ảnh jpg|*.jpg|png|*.png|tất cả ảnh|*.*";   // Lọc ảnh
+            if (OFD.ShowDialog() == DialogResult.OK)    //  .OK chứ ko phải .YES
+            {
+                _MyAcc.pb_avatar.Image = Image.FromFile(OFD.FileName);
             }
         }
     }

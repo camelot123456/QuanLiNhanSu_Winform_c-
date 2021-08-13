@@ -39,5 +39,11 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
             string sql = "INSERT INTO [USER](FULLNAME, USERNAME, [PASSWORD]) VALUES(N'" + fullname + "', N'" + username + "', N'" + password + "')";
             return dao.executeUpdate(sql);
         }
+
+        public int updateOneFullnameAndAvatarByUsername(string fullname, string avatar, string username)
+        {
+            string sql = "UPDATE [USER] SET FULLNAME = N'" + fullname + "', AVATAR = N'" + avatar + "' WHERE USERNAME = '" + username + "'";
+            return dao.executeUpdate(sql);
+        }
     }
 }
