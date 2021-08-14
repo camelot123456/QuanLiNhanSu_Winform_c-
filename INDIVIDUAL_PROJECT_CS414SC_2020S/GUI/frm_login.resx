@@ -189,7 +189,7 @@
     <value>295, 24</value>
   </data>
   <data name="txt_user.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txt_user.Name" xml:space="preserve">
     <value>txt_user</value>

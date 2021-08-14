@@ -45,12 +45,6 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
             hRService.handlerLoadData();
         }
 
-        private void btn_refresh_Click(object sender, EventArgs e)
-        {
-            hRService.handlerBtnRefresh();
-            hRService.handlerLoadData();
-        }
-
         private void pb_img_Click(object sender, EventArgs e)
         {
             hRService.handlerUploadImg();
@@ -65,6 +59,36 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
             else
             {
                 lbl_thongBaoImg.Text = "";
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SystemConstant.STAFF_MEMORY = new models.NhanVien();
+            SystemConstant.STAFF_MEMORY.Msnv = dataGridView1.CurrentRow.Cells["MANV"].Value.ToString();
+            txt_name.Text = dataGridView1.CurrentRow.Cells["TENNV"].Value.ToString();  // hoặc .Cells[0]  //[chỉ mục]
+            txt_img.Text = dataGridView1.CurrentRow.Cells["AVATAR"].Value.ToString();  //   .Cells[1]
+            dtp_dob.Text = dataGridView1.CurrentRow.Cells["NGAYVAOLAM"].Value.ToString();
+            cb_gender.Text = dataGridView1.CurrentRow.Cells["GIOITINH"].Value.ToString();      //.Cells[3] 
+            cb_department.Text = dataGridView1.CurrentRow.Cells["PHONGBAN"].Value.ToString();
+            cb_typeJob.Text = dataGridView1.CurrentRow.Cells["LOAICONGVIEC"].Value.ToString();
+            pb_img.ImageLocation = SystemConstant.PATH_BASE_STAFF + txt_img.Text;
+        }
+
+        private void btn_free_Click(object sender, EventArgs e)
+        {
+            SystemConstant.STAFF_MEMORY.Msnv = "-1";
+        }
+
+        private void label1_Validated(object sender, EventArgs e)
+        {
+            if (SystemConstant.STAFF_MEMORY.Msnv != null)
+            {
+                lbl_ThongBao.Text = "Mã nhân viên đã được lưu vào vùng nhớ tạm, chọn Cập nhập hoặc xóa hoặc xóa id để giải phóng";
+            }
+            else
+            {
+                lbl_ThongBao.Text = "";
             }
         }
     }

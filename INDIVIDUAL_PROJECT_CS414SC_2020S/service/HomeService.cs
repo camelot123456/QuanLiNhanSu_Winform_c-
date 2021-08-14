@@ -23,23 +23,16 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 
         public void contextLogout()
         {
-            _Main.lbl_fullname.Text = "Yêu cầu đăng nhập!";
-            _Main.lbl_id.Text = "Yêu cầu đăng nhập!";
-
-            SystemConstant.USERNAME = null;
-            SystemConstant.FULLNAME = null;
-            SystemConstant.PASSWORD = null;
-            SystemConstant.AVATAR = null;
-            SystemConstant.ID = null;
+            SystemConstant.USER_MEMORY = null;
             SystemConstant.ROLES.Clear();
 
-            _Main.btn_logout.Visible = false;
+            _Main.btn_help.Visible = false;
         }
 
 
         public void checkingLogin()
         {
-            if (SystemConstant.USERNAME == null)
+            if (SystemConstant.USER_MEMORY == null)
             {
                 contextLogout();
                 _Main.Hide();
@@ -47,9 +40,9 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             }
             else
             {
-                _Main.btn_logout.Visible = true;
-                _Main.lbl_fullname.Text = SystemConstant.FULLNAME;
-                _Main.pb_avatar.Image = Image.FromFile(SystemConstant.AVATAR);
+                _Main.btn_help.Visible = true;
+                _Main.lbl_fullname.Text = SystemConstant.USER_MEMORY.Fullname;
+                _Main.pb_avatar.Image = Image.FromFile(SystemConstant.PATH_BASE_ACCOUNT + SystemConstant.USER_MEMORY.Avatar);
                 _Main.pb_avatar.SizeMode = PictureBoxSizeMode.StretchImage;
                 _Main.Show();
                 new frm_login().Hide();
@@ -93,6 +86,25 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 DialogResult d = MessageBox.Show("Bạn chưa được cấp quyền vào khu vực này !!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else openChildForms(new frm_HR());
+        }
+
+        public void handerOpenChildFormCreateAccount()
+        {
+            bool k = false;
+            foreach (string role in SystemConstant.ROLES)
+            {
+                if (role.Equals("CEO") || role.Equals("MANAGER_HR"))
+                {
+                    k = true;
+                    break;
+                }
+                else k = false;
+            }
+            if (!k)
+            {
+                DialogResult d = MessageBox.Show("Bạn chưa được cấp quyền vào khu vực này !!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else openChildForms(new frm_createAccount());
         }
 
         public void handlerOpenChildFormPR()
@@ -182,6 +194,8 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 _Main.Close();
                 contextLogout();
                 new frm_login().Show();
+                SystemConstant.USER_MEMORY = null;
+                SystemConstant.STAFF_MEMORY = null;
             }
             else
             {

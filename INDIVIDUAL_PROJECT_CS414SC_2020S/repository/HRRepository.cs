@@ -31,7 +31,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
 
         public int updateOne(string name, string avatar, DateTime startDate, int gender, string department, string type, string id)
         {
-            string sql = "UPDATE NHANVIEN SET NAME=N'" + name + "', AVATAR=N'" + avatar + "', NGAYVAOLAM='" + startDate + "', GIOITINH= " + gender + ", PHONGBAN=N'" + department + "', LOAICONGVIEC=N'" + type + "' WHERE MANV = '" + id + "'";
+            string sql = "UPDATE NHANVIEN SET TENNV=N'" + name + "', AVATAR=N'" + avatar + "', NGAYVAOLAM='" + startDate + "', GIOITINH= " + gender + ", PHONGBAN=N'" + department + "', LOAICONGVIEC=N'" + type + "' WHERE MANV = '" + id + "'";
             return dao.executeUpdate(sql);
         }
 

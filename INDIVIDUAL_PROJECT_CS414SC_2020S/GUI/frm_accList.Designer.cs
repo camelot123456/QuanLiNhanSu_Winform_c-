@@ -152,6 +152,7 @@
             this.dataGridView_roleList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_roleList.Location = new System.Drawing.Point(26, 269);
             this.dataGridView_roleList.Name = "dataGridView_roleList";
+            this.dataGridView_roleList.ReadOnly = true;
             this.dataGridView_roleList.Size = new System.Drawing.Size(594, 341);
             this.dataGridView_roleList.TabIndex = 117;
             // 

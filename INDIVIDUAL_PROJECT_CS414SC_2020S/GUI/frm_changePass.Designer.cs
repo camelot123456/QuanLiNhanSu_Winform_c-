@@ -72,7 +72,7 @@
             this.btn_save.Location = new System.Drawing.Point(128, 323);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(194, 50);
-            this.btn_save.TabIndex = 61;
+            this.btn_save.TabIndex = 4;
             this.btn_save.Text = "Lưu lại";
             this.btn_save.UseVisualStyleBackColor = false;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click_1);
@@ -115,7 +115,7 @@
             this.txt_pass_check.Location = new System.Drawing.Point(192, 216);
             this.txt_pass_check.Name = "txt_pass_check";
             this.txt_pass_check.Size = new System.Drawing.Size(219, 27);
-            this.txt_pass_check.TabIndex = 55;
+            this.txt_pass_check.TabIndex = 3;
             this.txt_pass_check.UseSystemPasswordChar = true;
             this.txt_pass_check.Validated += new System.EventHandler(this.txt_pass_check_Validated_1);
             // 
@@ -125,7 +125,7 @@
             this.txt_pass_new.Location = new System.Drawing.Point(192, 148);
             this.txt_pass_new.Name = "txt_pass_new";
             this.txt_pass_new.Size = new System.Drawing.Size(219, 27);
-            this.txt_pass_new.TabIndex = 56;
+            this.txt_pass_new.TabIndex = 2;
             this.txt_pass_new.UseSystemPasswordChar = true;
             // 
             // label3
@@ -144,7 +144,7 @@
             this.txt_pass_old.Location = new System.Drawing.Point(192, 81);
             this.txt_pass_old.Name = "txt_pass_old";
             this.txt_pass_old.Size = new System.Drawing.Size(219, 27);
-            this.txt_pass_old.TabIndex = 57;
+            this.txt_pass_old.TabIndex = 1;
             this.txt_pass_old.UseSystemPasswordChar = true;
             this.txt_pass_old.Validated += new System.EventHandler(this.txt_pass_old_Validated_1);
             // 

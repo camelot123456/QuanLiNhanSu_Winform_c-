@@ -117,136 +117,479 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_del.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 262</value>
-  </data>
-  <data name="btn_del.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_del.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
+  <data name="tabPage1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="btn_del.Text" xml:space="preserve">
-    <value>Xóa</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txt_songay_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
-  <data name="&gt;&gt;btn_del.Name" xml:space="preserve">
-    <value>btn_del</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txt_songay_part.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
   </data>
-  <data name="&gt;&gt;btn_del.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txt_songay_part.Items" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;btn_del.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="txt_songay_part.Items1" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;btn_del.ZOrder" xml:space="preserve">
+  <data name="txt_songay_part.Items2" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btn_edit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 262</value>
-  </data>
-  <data name="btn_edit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btn_edit.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="btn_edit.Text" xml:space="preserve">
-    <value>Cập nhập</value>
-  </data>
-  <data name="&gt;&gt;btn_edit.Name" xml:space="preserve">
-    <value>btn_edit</value>
-  </data>
-  <data name="&gt;&gt;btn_edit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_edit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_edit.ZOrder" xml:space="preserve">
+  <data name="txt_songay_part.Items3" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="btn_refresh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>638, 262</value>
-  </data>
-  <data name="btn_refresh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btn_refresh.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="btn_refresh.Text" xml:space="preserve">
-    <value>Làm mới</value>
-  </data>
-  <data name="&gt;&gt;btn_refresh.Name" xml:space="preserve">
-    <value>btn_refresh</value>
-  </data>
-  <data name="&gt;&gt;btn_refresh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_refresh.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_refresh.ZOrder" xml:space="preserve">
+  <data name="txt_songay_part.Items4" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="btn_add.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 262</value>
-  </data>
-  <data name="btn_add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btn_add.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="btn_add.Text" xml:space="preserve">
-    <value>Thêm</value>
-  </data>
-  <data name="&gt;&gt;btn_add.Name" xml:space="preserve">
-    <value>btn_add</value>
-  </data>
-  <data name="&gt;&gt;btn_add.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_add.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_add.ZOrder" xml:space="preserve">
+  <data name="txt_songay_part.Items5" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 304</value>
+  <data name="txt_songay_part.Items6" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>900, 287</value>
+  <data name="txt_songay_part.Items7" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt_songay_part.Items8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txt_songay_part.Items9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txt_songay_part.Items10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txt_songay_part.Items11" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txt_songay_part.Items12" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txt_songay_part.Items13" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txt_songay_part.Items14" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txt_songay_part.Items15" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="txt_songay_part.Items16" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="txt_songay_part.Items17" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txt_songay_part.Items18" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="txt_songay_part.Items19" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txt_songay_part.Items20" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="txt_songay_part.Items21" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="txt_songay_part.Items22" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="txt_songay_part.Items23" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="txt_songay_part.Items24" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="txt_songay_part.Items25" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="txt_songay_part.Items26" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="txt_songay_part.Items27" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="txt_songay_part.Items28" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="txt_songay_part.Items29" xml:space="preserve">
     <value>29</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
+  <data name="txt_songay_part.Items30" xml:space="preserve">
+    <value>30</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+  <data name="txt_songay_part.Items31" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="txt_songay_part.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 102</value>
+  </data>
+  <data name="txt_songay_part.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 28</value>
+  </data>
+  <data name="txt_songay_part.TabIndex" type="System.Int32, mscorlib">
+    <value>199</value>
+  </data>
+  <data name="&gt;&gt;txt_songay_part.Name" xml:space="preserve">
+    <value>txt_songay_part</value>
+  </data>
+  <data name="&gt;&gt;txt_songay_part.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_songay_part.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;txt_songay_part.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_sogio.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="txt_sogio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="txt_sogio.Items" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_sogio.Items1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_sogio.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txt_sogio.Items3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txt_sogio.Items4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txt_sogio.Items5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txt_sogio.Items6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txt_sogio.Items7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txt_sogio.Items8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txt_sogio.Items9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txt_sogio.Items10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txt_sogio.Items11" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txt_sogio.Items12" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txt_sogio.Items13" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txt_sogio.Items14" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txt_sogio.Items15" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="txt_sogio.Items16" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="txt_sogio.Items17" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txt_sogio.Items18" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="txt_sogio.Items19" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txt_sogio.Items20" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="txt_sogio.Items21" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="txt_sogio.Items22" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="txt_sogio.Items23" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="txt_sogio.Items24" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="txt_sogio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 59</value>
+  </data>
+  <data name="txt_sogio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 28</value>
+  </data>
+  <data name="txt_sogio.TabIndex" type="System.Int32, mscorlib">
+    <value>199</value>
+  </data>
+  <data name="&gt;&gt;txt_sogio.Name" xml:space="preserve">
+    <value>txt_sogio</value>
+  </data>
+  <data name="&gt;&gt;txt_sogio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_sogio.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;txt_sogio.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_free_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_free_part.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_free_part.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
+  <data name="btn_free_part.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_free_part.Location" type="System.Drawing.Point, System.Drawing">
+    <value>613, 184</value>
+  </data>
+  <data name="btn_free_part.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 50</value>
+  </data>
+  <data name="btn_free_part.TabIndex" type="System.Int32, mscorlib">
+    <value>195</value>
+  </data>
+  <data name="btn_free_part.Text" xml:space="preserve">
+    <value>Xóa id trong bộ nhớ</value>
+  </data>
+  <data name="&gt;&gt;btn_free_part.Name" xml:space="preserve">
+    <value>btn_free_part</value>
+  </data>
+  <data name="&gt;&gt;btn_free_part.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_free_part.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_free_part.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_del_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_del_part.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_del_part.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
+  <data name="btn_del_part.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_del_part.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 184</value>
+  </data>
+  <data name="btn_del_part.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 50</value>
+  </data>
+  <data name="btn_del_part.TabIndex" type="System.Int32, mscorlib">
+    <value>196</value>
+  </data>
+  <data name="btn_del_part.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="&gt;&gt;btn_del_part.Name" xml:space="preserve">
+    <value>btn_del_part</value>
+  </data>
+  <data name="&gt;&gt;btn_del_part.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_del_part.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_del_part.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_update_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_update_part.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_update_part.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
+  <data name="btn_update_part.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_update_part.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 184</value>
+  </data>
+  <data name="btn_update_part.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 50</value>
+  </data>
+  <data name="btn_update_part.TabIndex" type="System.Int32, mscorlib">
+    <value>197</value>
+  </data>
+  <data name="btn_update_part.Text" xml:space="preserve">
+    <value>Cập nhập</value>
+  </data>
+  <data name="&gt;&gt;btn_update_part.Name" xml:space="preserve">
+    <value>btn_update_part</value>
+  </data>
+  <data name="&gt;&gt;btn_update_part.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_update_part.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_update_part.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_add_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_add_part.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_add_part.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
+  <data name="btn_add_part.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_add_part.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 184</value>
+  </data>
+  <data name="btn_add_part.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 50</value>
+  </data>
+  <data name="btn_add_part.TabIndex" type="System.Int32, mscorlib">
+    <value>198</value>
+  </data>
+  <data name="btn_add_part.Text" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+  <data name="&gt;&gt;btn_add_part.Name" xml:space="preserve">
+    <value>btn_add_part</value>
+  </data>
+  <data name="&gt;&gt;btn_add_part.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_add_part.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_add_part.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cb_nhanvien_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="cb_nhanvien_part.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="cb_nhanvien_part.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 14</value>
+  </data>
+  <data name="cb_nhanvien_part.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 28</value>
+  </data>
+  <data name="cb_nhanvien_part.TabIndex" type="System.Int32, mscorlib">
+    <value>194</value>
+  </data>
+  <data name="&gt;&gt;cb_nhanvien_part.Name" xml:space="preserve">
+    <value>cb_nhanvien_part</value>
+  </data>
+  <data name="&gt;&gt;cb_nhanvien_part.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_nhanvien_part.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;cb_nhanvien_part.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pb_img_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="pb_img_part.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_img_part.Location" type="System.Drawing.Point, System.Drawing">
+    <value>646, -43</value>
+  </data>
+  <data name="pb_img_part.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 206</value>
+  </data>
+  <data name="pb_img_part.TabIndex" type="System.Int32, mscorlib">
+    <value>193</value>
+  </data>
+  <data name="&gt;&gt;pb_img_part.Name" xml:space="preserve">
+    <value>pb_img_part</value>
+  </data>
+  <data name="&gt;&gt;pb_img_part.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_img_part.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;pb_img_part.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="dataGridView_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="dataGridView_part.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 251</value>
+  </data>
+  <data name="dataGridView_part.Size" type="System.Drawing.Size, System.Drawing">
+    <value>793, 287</value>
+  </data>
+  <data name="dataGridView_part.TabIndex" type="System.Int32, mscorlib">
+    <value>192</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_part.Name" xml:space="preserve">
+    <value>dataGridView_part</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_part.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;dataGridView_part.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;dataGridView_part.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 183</value>
+    <value>324, 105</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
+    <value>91, 20</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+    <value>182</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Số ngày làm</value>
@@ -258,43 +601,85 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
-  <data name="txt_sogio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 138</value>
+  <data name="txt_luong1gio.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
-  <data name="txt_sogio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 20</value>
+  <data name="txt_luong1gio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
   </data>
-  <data name="txt_sogio.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="txt_luong1gio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 18</value>
   </data>
-  <data name="&gt;&gt;txt_sogio.Name" xml:space="preserve">
-    <value>txt_sogio</value>
+  <data name="txt_luong1gio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 27</value>
   </data>
-  <data name="&gt;&gt;txt_sogio.Type" xml:space="preserve">
+  <data name="txt_luong1gio.TabIndex" type="System.Int32, mscorlib">
+    <value>191</value>
+  </data>
+  <data name="&gt;&gt;txt_luong1gio.Name" xml:space="preserve">
+    <value>txt_luong1gio</value>
+  </data>
+  <data name="&gt;&gt;txt_luong1gio.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txt_sogio.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;txt_luong1gio.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;txt_sogio.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;txt_luong1gio.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txt_luongThuong_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="txt_luongThuong_part.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="txt_luongThuong_part.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 60</value>
+  </data>
+  <data name="txt_luongThuong_part.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 27</value>
+  </data>
+  <data name="txt_luongThuong_part.TabIndex" type="System.Int32, mscorlib">
+    <value>188</value>
+  </data>
+  <data name="&gt;&gt;txt_luongThuong_part.Name" xml:space="preserve">
+    <value>txt_luongThuong_part</value>
+  </data>
+  <data name="&gt;&gt;txt_luongThuong_part.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_luongThuong_part.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;txt_luongThuong_part.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 141</value>
+    <value>324, 63</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
+    <value>81, 20</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+    <value>183</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Số giờ làm</value>
@@ -306,22 +691,31 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>12</value>
+  </data>
+  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 99</value>
+    <value>324, 21</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 13</value>
+    <value>89, 20</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+    <value>184</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Lương 1 giờ</value>
@@ -333,49 +727,31 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>13</value>
   </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 59</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 13</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Lương 1 ngày</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="Giơi.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="Giơi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="Giơi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="Giơi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="Giơi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 177</value>
+    <value>10, 63</value>
   </data>
   <data name="Giơi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 13</value>
+    <value>103, 20</value>
   </data>
   <data name="Giơi.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>180</value>
   </data>
   <data name="Giơi.Text" xml:space="preserve">
     <value>Lương thưởng</value>
@@ -387,253 +763,31 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Giơi.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;Giơi.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>14</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 138</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Hệ số</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="txt_luongCB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 98</value>
-  </data>
-  <data name="txt_luongCB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 20</value>
-  </data>
-  <data name="txt_luongCB.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;txt_luongCB.Name" xml:space="preserve">
-    <value>txt_luongCB</value>
-  </data>
-  <data name="&gt;&gt;txt_luongCB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_luongCB.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_luongCB.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 101</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 13</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Lương cơ bản</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 11</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 17</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Quản lý lương</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="txt_luong1gio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 96</value>
-  </data>
-  <data name="txt_luong1gio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 20</value>
-  </data>
-  <data name="txt_luong1gio.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;txt_luong1gio.Name" xml:space="preserve">
-    <value>txt_luong1gio</value>
-  </data>
-  <data name="&gt;&gt;txt_luong1gio.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_luong1gio.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_luong1gio.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="txt_luong1ngay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 56</value>
-  </data>
-  <data name="txt_luong1ngay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 20</value>
-  </data>
-  <data name="txt_luong1ngay.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;txt_luong1ngay.Name" xml:space="preserve">
-    <value>txt_luong1ngay</value>
-  </data>
-  <data name="&gt;&gt;txt_luong1ngay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_luong1ngay.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_luong1ngay.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="txt_txt_songay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 175</value>
-  </data>
-  <data name="txt_txt_songay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 20</value>
-  </data>
-  <data name="txt_txt_songay.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;txt_txt_songay.Name" xml:space="preserve">
-    <value>txt_txt_songay</value>
-  </data>
-  <data name="&gt;&gt;txt_txt_songay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_txt_songay.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_txt_songay.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="txt_luongThuong.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 174</value>
-  </data>
-  <data name="txt_luongThuong.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 20</value>
-  </data>
-  <data name="txt_luongThuong.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;txt_luongThuong.Name" xml:space="preserve">
-    <value>txt_luongThuong</value>
-  </data>
-  <data name="&gt;&gt;txt_luongThuong.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_luongThuong.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_luongThuong.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="pb_img.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 52</value>
-  </data>
-  <data name="pb_img.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 144</value>
-  </data>
-  <data name="pb_img.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;pb_img.Name" xml:space="preserve">
-    <value>pb_img</value>
-  </data>
-  <data name="&gt;&gt;pb_img.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pb_img.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pb_img.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txt_hsluong.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 137</value>
-  </data>
-  <data name="txt_hsluong.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 20</value>
-  </data>
-  <data name="txt_hsluong.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;txt_hsluong.Name" xml:space="preserve">
-    <value>txt_hsluong</value>
-  </data>
-  <data name="&gt;&gt;txt_hsluong.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_hsluong.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_hsluong.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 60</value>
+    <value>10, 18</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
+    <value>75, 20</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>178</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Nhân viên</value>
@@ -645,30 +799,738 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 553</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Part-time</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_songay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="txt_songay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="txt_songay.Items" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_songay.Items1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_songay.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txt_songay.Items3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txt_songay.Items4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txt_songay.Items5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txt_songay.Items6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txt_songay.Items7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txt_songay.Items8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txt_songay.Items9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txt_songay.Items10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txt_songay.Items11" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txt_songay.Items12" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txt_songay.Items13" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txt_songay.Items14" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txt_songay.Items15" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="txt_songay.Items16" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="txt_songay.Items17" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txt_songay.Items18" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="txt_songay.Items19" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="cb_nhanvien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 56</value>
+  <data name="txt_songay.Items20" xml:space="preserve">
+    <value>20</value>
   </data>
-  <data name="cb_nhanvien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 21</value>
+  <data name="txt_songay.Items21" xml:space="preserve">
+    <value>21</value>
   </data>
-  <data name="cb_nhanvien.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
+  <data name="txt_songay.Items22" xml:space="preserve">
+    <value>22</value>
   </data>
-  <data name="&gt;&gt;cb_nhanvien.Name" xml:space="preserve">
-    <value>cb_nhanvien</value>
+  <data name="txt_songay.Items23" xml:space="preserve">
+    <value>23</value>
   </data>
-  <data name="&gt;&gt;cb_nhanvien.Type" xml:space="preserve">
+  <data name="txt_songay.Items24" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="txt_songay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>432, 56</value>
+  </data>
+  <data name="txt_songay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 28</value>
+  </data>
+  <data name="txt_songay.TabIndex" type="System.Int32, mscorlib">
+    <value>222</value>
+  </data>
+  <data name="&gt;&gt;txt_songay.Name" xml:space="preserve">
+    <value>txt_songay</value>
+  </data>
+  <data name="&gt;&gt;txt_songay.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cb_nhanvien.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_songay.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;txt_songay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_free_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_free_full.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_free_full.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
+  <data name="btn_free_full.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_free_full.Location" type="System.Drawing.Point, System.Drawing">
+    <value>613, 184</value>
+  </data>
+  <data name="btn_free_full.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 50</value>
+  </data>
+  <data name="btn_free_full.TabIndex" type="System.Int32, mscorlib">
+    <value>217</value>
+  </data>
+  <data name="btn_free_full.Text" xml:space="preserve">
+    <value>Xóa id trong bộ nhớ</value>
+  </data>
+  <data name="&gt;&gt;btn_free_full.Name" xml:space="preserve">
+    <value>btn_free_full</value>
+  </data>
+  <data name="&gt;&gt;btn_free_full.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_free_full.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_free_full.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_del_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_del_full.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_del_full.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
+  <data name="btn_del_full.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_del_full.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 184</value>
+  </data>
+  <data name="btn_del_full.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 50</value>
+  </data>
+  <data name="btn_del_full.TabIndex" type="System.Int32, mscorlib">
+    <value>218</value>
+  </data>
+  <data name="btn_del_full.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="&gt;&gt;btn_del_full.Name" xml:space="preserve">
+    <value>btn_del_full</value>
+  </data>
+  <data name="&gt;&gt;btn_del_full.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_del_full.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_del_full.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_update_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_update_full.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_update_full.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
+  <data name="btn_update_full.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_update_full.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 184</value>
+  </data>
+  <data name="btn_update_full.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 50</value>
+  </data>
+  <data name="btn_update_full.TabIndex" type="System.Int32, mscorlib">
+    <value>219</value>
+  </data>
+  <data name="btn_update_full.Text" xml:space="preserve">
+    <value>Cập nhập</value>
+  </data>
+  <data name="&gt;&gt;btn_update_full.Name" xml:space="preserve">
+    <value>btn_update_full</value>
+  </data>
+  <data name="&gt;&gt;btn_update_full.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_update_full.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_update_full.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_add_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_add_full.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_add_full.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
+  <data name="btn_add_full.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_add_full.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 184</value>
+  </data>
+  <data name="btn_add_full.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 50</value>
+  </data>
+  <data name="btn_add_full.TabIndex" type="System.Int32, mscorlib">
+    <value>220</value>
+  </data>
+  <data name="btn_add_full.Text" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+  <data name="&gt;&gt;btn_add_full.Name" xml:space="preserve">
+    <value>btn_add_full</value>
+  </data>
+  <data name="&gt;&gt;btn_add_full.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_add_full.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;btn_add_full.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cb_nhanvien_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="cb_nhanvien_full.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="cb_nhanvien_full.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 14</value>
+  </data>
+  <data name="cb_nhanvien_full.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 28</value>
+  </data>
+  <data name="cb_nhanvien_full.TabIndex" type="System.Int32, mscorlib">
+    <value>216</value>
+  </data>
+  <data name="&gt;&gt;cb_nhanvien_full.Name" xml:space="preserve">
+    <value>cb_nhanvien_full</value>
+  </data>
+  <data name="&gt;&gt;cb_nhanvien_full.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_nhanvien_full.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;cb_nhanvien_full.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pb_img_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="pb_img_full.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_img_full.Location" type="System.Drawing.Point, System.Drawing">
+    <value>646, -48</value>
+  </data>
+  <data name="pb_img_full.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 206</value>
+  </data>
+  <data name="pb_img_full.TabIndex" type="System.Int32, mscorlib">
+    <value>215</value>
+  </data>
+  <data name="&gt;&gt;pb_img_full.Name" xml:space="preserve">
+    <value>pb_img_full</value>
+  </data>
+  <data name="&gt;&gt;pb_img_full.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_img_full.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;pb_img_full.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="dataGridView_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="dataGridView_full.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 251</value>
+  </data>
+  <data name="dataGridView_full.Size" type="System.Drawing.Size, System.Drawing">
+    <value>793, 287</value>
+  </data>
+  <data name="dataGridView_full.TabIndex" type="System.Int32, mscorlib">
+    <value>214</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_full.Name" xml:space="preserve">
+    <value>dataGridView_full</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_full.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_full.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_full.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 59</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>204</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Số ngày làm</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txt_luong1ngay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="txt_luong1ngay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="txt_luong1ngay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>432, 16</value>
+  </data>
+  <data name="txt_luong1ngay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 27</value>
+  </data>
+  <data name="txt_luong1ngay.TabIndex" type="System.Int32, mscorlib">
+    <value>212</value>
+  </data>
+  <data name="&gt;&gt;txt_luong1ngay.Name" xml:space="preserve">
+    <value>txt_luong1ngay</value>
+  </data>
+  <data name="&gt;&gt;txt_luong1ngay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_luong1ngay.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;txt_luong1ngay.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txt_hesl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="txt_hesl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="txt_hesl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 95</value>
+  </data>
+  <data name="txt_hesl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 27</value>
+  </data>
+  <data name="txt_hesl.TabIndex" type="System.Int32, mscorlib">
+    <value>211</value>
+  </data>
+  <data name="&gt;&gt;txt_hesl.Name" xml:space="preserve">
+    <value>txt_hesl</value>
+  </data>
+  <data name="&gt;&gt;txt_hesl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_hesl.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;txt_hesl.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txt_luongThuong_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="txt_luongThuong_full.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="txt_luongThuong_full.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 95</value>
+  </data>
+  <data name="txt_luongThuong_full.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 27</value>
+  </data>
+  <data name="txt_luongThuong_full.TabIndex" type="System.Int32, mscorlib">
+    <value>210</value>
+  </data>
+  <data name="&gt;&gt;txt_luongThuong_full.Name" xml:space="preserve">
+    <value>txt_luongThuong_full</value>
+  </data>
+  <data name="&gt;&gt;txt_luongThuong_full.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_luongThuong_full.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;txt_luongThuong_full.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 19</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>207</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Lương 1 ngày</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 98</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 20</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>202</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Lương thưởng</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 96</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 20</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>201</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Hệ số</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label14.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 18</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="txt_luongcb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="txt_luongcb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="txt_luongcb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 56</value>
+  </data>
+  <data name="txt_luongcb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 27</value>
+  </data>
+  <data name="txt_luongcb.TabIndex" type="System.Int32, mscorlib">
+    <value>203</value>
+  </data>
+  <data name="&gt;&gt;txt_luongcb.Name" xml:space="preserve">
+    <value>txt_luongcb</value>
+  </data>
+  <data name="&gt;&gt;txt_luongcb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_luongcb.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;txt_luongcb.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label15.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 59</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>199</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Lương cơ bản</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 553</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Full-time</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>825, 586</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;cb_nhanvien.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -677,10 +1539,12 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1023, 605</value>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>825, 586</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>

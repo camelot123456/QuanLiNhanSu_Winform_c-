@@ -19,11 +19,11 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
         {
             userService = new UserService(this);
             InitializeComponent();
-            txt_fullname.Text = SystemConstant.FULLNAME;
-            txt_avatar.Text = SystemConstant.AVATAR;
-            lbl_id.Text = SystemConstant.ID;
-            lbl_account.Text = SystemConstant.USERNAME;
-            pb_avatar.Image = Image.FromFile(SystemConstant.AVATAR);
+            txt_fullname.Text = SystemConstant.USER_MEMORY.Fullname;
+            txt_avatar.Text = SystemConstant.USER_MEMORY.Avatar;
+            lbl_id.Text = SystemConstant.USER_MEMORY.Id;
+            lbl_account.Text = SystemConstant.USER_MEMORY.Username;
+            pb_avatar.Image = Image.FromFile(SystemConstant.PATH_BASE_ACCOUNT + SystemConstant.USER_MEMORY.Avatar);
             pb_avatar.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 

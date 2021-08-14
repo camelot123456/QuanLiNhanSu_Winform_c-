@@ -30,7 +30,7 @@
         {
             this.pb_avatar = new System.Windows.Forms.PictureBox();
             this.lbl_account = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_username = new System.Windows.Forms.Label();
             this.lbl_id = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_avatar = new System.Windows.Forms.Label();
@@ -46,6 +46,7 @@
             // 
             this.pb_avatar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pb_avatar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pb_avatar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_avatar.Location = new System.Drawing.Point(102, 52);
             this.pb_avatar.Name = "pb_avatar";
             this.pb_avatar.Size = new System.Drawing.Size(381, 481);
@@ -64,16 +65,16 @@
             this.lbl_account.TabIndex = 102;
             this.lbl_account.Text = "lbl_account";
             // 
-            // label3
+            // lbl_username
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(596, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 20);
-            this.label3.TabIndex = 103;
-            this.label3.Text = "Mã tài khoản";
+            this.lbl_username.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_username.AutoSize = true;
+            this.lbl_username.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_username.Location = new System.Drawing.Point(596, 148);
+            this.lbl_username.Name = "lbl_username";
+            this.lbl_username.Size = new System.Drawing.Size(97, 20);
+            this.lbl_username.TabIndex = 103;
+            this.lbl_username.Text = "Tên tài khoản";
             // 
             // lbl_id
             // 
@@ -160,8 +161,9 @@
             this.txt_avatar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_avatar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_avatar.Location = new System.Drawing.Point(723, 190);
+            this.txt_avatar.Multiline = true;
             this.txt_avatar.Name = "txt_avatar";
-            this.txt_avatar.Size = new System.Drawing.Size(266, 27);
+            this.txt_avatar.Size = new System.Drawing.Size(266, 221);
             this.txt_avatar.TabIndex = 108;
             // 
             // txt_fullname
@@ -180,7 +182,7 @@
             this.ClientSize = new System.Drawing.Size(1064, 585);
             this.Controls.Add(this.pb_avatar);
             this.Controls.Add(this.lbl_account);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbl_username);
             this.Controls.Add(this.lbl_id);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_avatar);
@@ -202,7 +204,7 @@
 
         public System.Windows.Forms.PictureBox pb_avatar;
         public System.Windows.Forms.Label lbl_account;
-        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label lbl_username;
         public System.Windows.Forms.Label lbl_id;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lbl_avatar;

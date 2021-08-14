@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btn_logout = new System.Windows.Forms.Button();
             this.btn_help = new System.Windows.Forms.Button();
+            this.btn_createdAcc = new System.Windows.Forms.Button();
             this.btn_role = new System.Windows.Forms.Button();
             this.btn_pr = new System.Windows.Forms.Button();
             this.btn_hr = new System.Windows.Forms.Button();
@@ -44,6 +44,7 @@
             this.btnCloseChild = new System.Windows.Forms.Button();
             this.lbl_title = new System.Windows.Forms.Label();
             this.panelDesktopMain = new System.Windows.Forms.Panel();
+            this.btn_logout = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,6 +57,7 @@
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(50)))), ((int)(((byte)(76)))));
             this.panelMenu.Controls.Add(this.btn_logout);
             this.panelMenu.Controls.Add(this.btn_help);
+            this.panelMenu.Controls.Add(this.btn_createdAcc);
             this.panelMenu.Controls.Add(this.btn_role);
             this.panelMenu.Controls.Add(this.btn_pr);
             this.panelMenu.Controls.Add(this.btn_hr);
@@ -67,23 +69,6 @@
             this.panelMenu.Size = new System.Drawing.Size(301, 561);
             this.panelMenu.TabIndex = 1;
             // 
-            // btn_logout
-            // 
-            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_logout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_logout.FlatAppearance.BorderSize = 0;
-            this.btn_logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
-            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logout.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logout.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_logout.Location = new System.Drawing.Point(0, 450);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(301, 70);
-            this.btn_logout.TabIndex = 9;
-            this.btn_logout.Text = "Đăng xuất";
-            this.btn_logout.UseVisualStyleBackColor = true;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
-            // 
             // btn_help
             // 
             this.btn_help.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -93,13 +78,30 @@
             this.btn_help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_help.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_help.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_help.Location = new System.Drawing.Point(0, 380);
+            this.btn_help.Location = new System.Drawing.Point(0, 450);
             this.btn_help.Name = "btn_help";
             this.btn_help.Size = new System.Drawing.Size(301, 70);
-            this.btn_help.TabIndex = 7;
+            this.btn_help.TabIndex = 9;
             this.btn_help.Text = "Trợ giúp";
             this.btn_help.UseVisualStyleBackColor = true;
             this.btn_help.Click += new System.EventHandler(this.btn_help_Click);
+            // 
+            // btn_createdAcc
+            // 
+            this.btn_createdAcc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_createdAcc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_createdAcc.FlatAppearance.BorderSize = 0;
+            this.btn_createdAcc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
+            this.btn_createdAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_createdAcc.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_createdAcc.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_createdAcc.Location = new System.Drawing.Point(0, 380);
+            this.btn_createdAcc.Name = "btn_createdAcc";
+            this.btn_createdAcc.Size = new System.Drawing.Size(301, 70);
+            this.btn_createdAcc.TabIndex = 7;
+            this.btn_createdAcc.Text = "Tạo tài khoản";
+            this.btn_createdAcc.UseVisualStyleBackColor = true;
+            this.btn_createdAcc.Click += new System.EventHandler(this.btn_createdAcc_Click);
             // 
             // btn_role
             // 
@@ -272,6 +274,23 @@
             this.panelDesktopMain.Size = new System.Drawing.Size(720, 461);
             this.panelDesktopMain.TabIndex = 3;
             // 
+            // btn_logout
+            // 
+            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_logout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_logout.FlatAppearance.BorderSize = 0;
+            this.btn_logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_logout.Location = new System.Drawing.Point(0, 520);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(301, 70);
+            this.btn_logout.TabIndex = 10;
+            this.btn_logout.Text = "Đăng xuất";
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,7 +317,7 @@
 
         #endregion
         public System.Windows.Forms.Panel panelMenu;
-        public System.Windows.Forms.Button btn_help;
+        public System.Windows.Forms.Button btn_createdAcc;
         public System.Windows.Forms.Button btn_role;
         public System.Windows.Forms.Button btn_pr;
         public System.Windows.Forms.Button btn_hr;
@@ -312,6 +331,7 @@
         public System.Windows.Forms.Button btnCloseChild;
         public System.Windows.Forms.Panel panelDesktopMain;
         public System.Windows.Forms.Label lbl_id;
+        public System.Windows.Forms.Button btn_help;
         public System.Windows.Forms.Button btn_logout;
     }
 }

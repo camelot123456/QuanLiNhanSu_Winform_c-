@@ -30,88 +30,13 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S
         {
 
             homeService.checkingLogin();
-            if (SystemConstant.USERNAME != null)
+            if (SystemConstant.USER_MEMORY != null)
             {
-                lbl_fullname.Text = SystemConstant.FULLNAME;
-            }
-            else
-            {
-                lbl_fullname.Text = "Yêu cầu đăng nhập";
+                lbl_fullname.Text = SystemConstant.USER_MEMORY.Fullname;
+                lbl_id.Text = SystemConstant.USER_MEMORY.Id;
             }
         }
 
-        private void tạoTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            bool k = false;
-            frm_createAccount _createAccount;
-            foreach (string role in SystemConstant.ROLES)
-            {
-                if (role.Equals("CEO") || role.Equals("MANAGER_HR"))
-                {
-                    if (Application.OpenForms["frm_createAccount"] == null)
-                    {
-                        _createAccount = new frm_createAccount();
-                        _createAccount.MdiParent = this;
-                        _createAccount.Show();
-                    }
-                    else
-                    {
-                        _createAccount = new frm_createAccount();
-                        Application.OpenForms["frm_createAccount"].Activate();
-                    }
-                    k = true;
-                }
-            }
-            if (!k)
-            {
-                DialogResult d = MessageBox.Show("Bạn chưa được cấp quyền vào khu vực này !!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frm_changePass _changePass;
-            if (Application.OpenForms["frm_changePass"] == null)
-            {
-                _changePass = new frm_changePass();
-                _changePass.MdiParent = this;
-                _changePass.Show();
-            }
-            else
-            {
-                _changePass = new frm_changePass();
-                Application.OpenForms["frm_changePass"].Activate();
-            }
-
-        }
-
-        private void tàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            bool k = false;
-            frm_accList _accList;
-            foreach (string role in SystemConstant.ROLES)
-            {
-                if (role.Equals("CEO") || role.Equals("MANAGER_HR"))
-                {
-                    if (Application.OpenForms["frm_accList"] == null)
-                    {
-                        _accList = new frm_accList();
-                        _accList.MdiParent = this;
-                        _accList.Show();
-                    }
-                    else
-                    {
-                        _accList = new frm_accList();
-                        Application.OpenForms["frm_accList"].Activate();
-                    }
-                    k = true;
-                }
-            }
-            if (!k)
-            {
-                DialogResult d = MessageBox.Show("Bạn chưa được cấp quyền vào khu vực này !!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
         //---------------------------------------------------------------------------------------------------
       
 
@@ -155,14 +80,14 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S
             homeService.handerExitApp();
         }
 
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            homeService.handerExitApp();
-        }
-
         private void pb_avatar_Click(object sender, EventArgs e)
         {
             homeService.handerOpenChildFormMyAccount();
+        }
+
+        private void btn_createdAcc_Click(object sender, EventArgs e)
+        {
+            homeService.handerOpenChildFormCreateAccount();
         }
     }
 }

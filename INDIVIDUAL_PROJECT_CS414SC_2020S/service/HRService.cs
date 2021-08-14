@@ -55,25 +55,63 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             }
             catch (Exception e)
             {
-
                 MessageBox.Show(e.Message);
-                
             }
         }
 
-        internal void handlerBtnUpdate()
+        public void handlerBtnUpdate()
         {
-            throw new NotImplementedException();
+            try
+            {
+                string path = SystemConstant.PATH_BASE_STAFF + _HR.txt_img.Text;
+                _HR.pb_img.Image.Save(path);
+                int k = hRRepository.updateOne(_HR.txt_name.Text, _HR.txt_img.Text, DateTime.Parse(_HR.dtp_dob.Text), genderToBool(_HR.cb_gender.Text), _HR.cb_department.Text, _HR.cb_typeJob.Text, SystemConstant.STAFF_MEMORY.Msnv);
+                if (k == 0)
+                {
+                    MessageBox.Show("Cập nhập thất bại");
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhập thành công");
+                    SystemConstant.STAFF_MEMORY.Msnv = null;
+                }
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show(e.Message);
+
+            }
         }
 
-        internal void handlerBtnDelete()
+        public void handlerBtnDelete()
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                DialogResult d = MessageBox.Show("Bạn có muốn xóa không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-        internal void handlerBtnRefresh()
-        {
-            throw new NotImplementedException();
+                if (d == DialogResult.Yes)
+                {
+                    int k = hRRepository.deleteOne(SystemConstant.STAFF_MEMORY.Msnv);
+                    if (k == 0)
+                    {
+                        MessageBox.Show("Xóa thất bại");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa thành công");
+                        SystemConstant.STAFF_MEMORY.Msnv = null;
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         public void handlerUploadImg()

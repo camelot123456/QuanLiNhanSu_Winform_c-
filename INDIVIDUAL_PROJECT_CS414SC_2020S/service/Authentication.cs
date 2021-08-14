@@ -40,18 +40,19 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             else
             {
                 _Login.lbl_warning_login.Text = "";
-                SystemConstant.USERNAME = dt.Rows[0]["USERNAME"].ToString();
-                SystemConstant.FULLNAME = dt.Rows[0]["FULLNAME"].ToString();
-                SystemConstant.PASSWORD = dt.Rows[0]["PASSWORD"].ToString();
-                SystemConstant.AVATAR = dt.Rows[0]["AVATAR"].ToString();
-                SystemConstant.ID = dt.Rows[0]["IDUSER"].ToString();
-                dt = roleRepository.findRoleCodeByUsername(SystemConstant.USERNAME);
+                SystemConstant.USER_MEMORY = new models.User();
+                SystemConstant.USER_MEMORY.Username = dt.Rows[0]["USERNAME"].ToString();
+                SystemConstant.USER_MEMORY.Fullname = dt.Rows[0]["FULLNAME"].ToString();
+                SystemConstant.USER_MEMORY.Password = dt.Rows[0]["PASSWORD"].ToString();
+                SystemConstant.USER_MEMORY.Avatar = dt.Rows[0]["AVATAR"].ToString();
+                SystemConstant.USER_MEMORY.Id = dt.Rows[0]["IDUSER"].ToString();
+                dt = roleRepository.findRoleCodeByUsername(SystemConstant.USER_MEMORY.Username);
                 foreach (DataRow row in dt.Rows)
                 {
                     SystemConstant.ROLES.Add(row["ROLECODE"].ToString());
                 }
-                _Main.btn_logout.Visible = true;
-                _Main.lbl_fullname.Text = SystemConstant.FULLNAME;
+                _Main.btn_help.Visible = true;
+                _Main.lbl_fullname.Text = SystemConstant.USER_MEMORY.Username;
                 homeService.handlerBtnCloseChildForm();
                 _Login.Hide();
                 _Main.Show();

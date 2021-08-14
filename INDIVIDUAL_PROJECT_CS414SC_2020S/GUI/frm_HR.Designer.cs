@@ -42,11 +42,12 @@
             this.cb_gender = new System.Windows.Forms.ComboBox();
             this.cb_typeJob = new System.Windows.Forms.ComboBox();
             this.cb_department = new System.Windows.Forms.ComboBox();
-            this.btn_refresh = new System.Windows.Forms.Button();
             this.btn_del = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_add = new System.Windows.Forms.Button();
             this.lbl_thongBaoImg = new System.Windows.Forms.Label();
+            this.btn_free = new System.Windows.Forms.Button();
+            this.lbl_ThongBao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -156,6 +157,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(794, 287);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // dtp_dob
             // 
@@ -205,24 +207,6 @@
             this.cb_department.Size = new System.Drawing.Size(238, 28);
             this.cb_department.TabIndex = 14;
             // 
-            // btn_refresh
-            // 
-            this.btn_refresh.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(28)))));
-            this.btn_refresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_refresh.FlatAppearance.BorderSize = 0;
-            this.btn_refresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(50)))), ((int)(((byte)(76)))));
-            this.btn_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_refresh.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_refresh.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_refresh.Location = new System.Drawing.Point(612, 262);
-            this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(194, 50);
-            this.btn_refresh.TabIndex = 124;
-            this.btn_refresh.Text = "Làm mới";
-            this.btn_refresh.UseVisualStyleBackColor = false;
-            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
-            // 
             // btn_del
             // 
             this.btn_del.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -233,7 +217,7 @@
             this.btn_del.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_del.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_del.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_del.Location = new System.Drawing.Point(412, 262);
+            this.btn_del.Location = new System.Drawing.Point(412, 261);
             this.btn_del.Name = "btn_del";
             this.btn_del.Size = new System.Drawing.Size(194, 50);
             this.btn_del.TabIndex = 125;
@@ -251,7 +235,7 @@
             this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_update.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_update.Location = new System.Drawing.Point(212, 262);
+            this.btn_update.Location = new System.Drawing.Point(212, 261);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(194, 50);
             this.btn_update.TabIndex = 126;
@@ -269,7 +253,7 @@
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_add.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_add.Location = new System.Drawing.Point(12, 262);
+            this.btn_add.Location = new System.Drawing.Point(12, 261);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(194, 50);
             this.btn_add.TabIndex = 127;
@@ -289,12 +273,43 @@
             this.lbl_thongBaoImg.TabIndex = 4;
             this.lbl_thongBaoImg.Text = " ";
             // 
+            // btn_free
+            // 
+            this.btn_free.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_free.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(28)))));
+            this.btn_free.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_free.FlatAppearance.BorderSize = 0;
+            this.btn_free.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(50)))), ((int)(((byte)(76)))));
+            this.btn_free.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_free.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_free.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_free.Location = new System.Drawing.Point(609, 261);
+            this.btn_free.Name = "btn_free";
+            this.btn_free.Size = new System.Drawing.Size(194, 50);
+            this.btn_free.TabIndex = 125;
+            this.btn_free.Text = "Xóa id trong bộ nhớ";
+            this.btn_free.UseVisualStyleBackColor = false;
+            this.btn_free.Click += new System.EventHandler(this.btn_free_Click);
+            // 
+            // lbl_ThongBao
+            // 
+            this.lbl_ThongBao.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ThongBao.AutoSize = true;
+            this.lbl_ThongBao.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ThongBao.ForeColor = System.Drawing.Color.Red;
+            this.lbl_ThongBao.Location = new System.Drawing.Point(301, 313);
+            this.lbl_ThongBao.Name = "lbl_ThongBao";
+            this.lbl_ThongBao.Size = new System.Drawing.Size(19, 13);
+            this.lbl_ThongBao.TabIndex = 4;
+            this.lbl_ThongBao.Text = "    ";
+            this.lbl_ThongBao.Validated += new System.EventHandler(this.label1_Validated);
+            // 
             // frm_HR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 639);
-            this.Controls.Add(this.btn_refresh);
+            this.Controls.Add(this.btn_free);
             this.Controls.Add(this.btn_del);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_add);
@@ -306,6 +321,7 @@
             this.Controls.Add(this.pb_img);
             this.Controls.Add(this.txt_img);
             this.Controls.Add(this.lbl_thongBaoImg);
+            this.Controls.Add(this.lbl_ThongBao);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -339,10 +355,11 @@
         public System.Windows.Forms.ComboBox cb_typeJob;
         public System.Windows.Forms.ComboBox cb_department;
         public System.Windows.Forms.DataGridView dataGridView1;
-        public System.Windows.Forms.Button btn_refresh;
         public System.Windows.Forms.Button btn_del;
         public System.Windows.Forms.Button btn_update;
         public System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Label lbl_thongBaoImg;
+        public System.Windows.Forms.Button btn_free;
+        public System.Windows.Forms.Label lbl_ThongBao;
     }
 }

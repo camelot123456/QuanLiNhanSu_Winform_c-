@@ -49,8 +49,8 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 userRepository.updateOneFullnameAndAvatarByUsername
                 (
                     _MyAcc.txt_fullname.Text,
-                    SystemConstant.PATH_BASE_ACCOUNT + _MyAcc.txt_avatar.Text,
-                    SystemConstant.USERNAME
+                    _MyAcc.txt_avatar.Text,
+                    SystemConstant.USER_MEMORY.Username
                 );
                 MessageBox.Show("Cập nhập thông tin thành công\n");
             }
@@ -65,7 +65,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 {
                     try
                     {
-                        userRepository.updateOnePasswordByUsername(_changePass.txt_pass_check.Text, SystemConstant.USERNAME);
+                        userRepository.updateOnePasswordByUsername(_changePass.txt_pass_check.Text, SystemConstant.USER_MEMORY.Username);
                         MessageBox.Show("Đổi mật khẩu thành công\nSẽ có hiệu lực sau lần đăng nhập tiếp theo");
                         _changePass.Close();
                     }
@@ -83,7 +83,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 
         public void handlerValidatePassOld()
         {
-            if (!_changePass.txt_pass_old.Text.Equals(SystemConstant.PASSWORD))
+            if (!_changePass.txt_pass_old.Text.Equals(SystemConstant.USER_MEMORY.Password))
             {
                 _changePass.lbl_warnChangePass.Text = "Mật khẩu cũ không đúng";
                 is_passOldChange = false;
