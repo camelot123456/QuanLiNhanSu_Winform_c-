@@ -27,6 +27,14 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             _HR.dataGridView1.DataSource = hRRepository.find();
         }
 
+
+
+        public void freeMemory()
+        {
+            SystemConstant.STAFF_MEMORY = null;
+            _HR.lbl_manv.Text = "Kích đúp hàng cần sửa hoặc xóa";
+        }
+
         public int genderToBool(string gender)
         {
             if (gender.Equals("Nam"))
@@ -65,7 +73,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             {
                 string path = SystemConstant.PATH_BASE_STAFF + _HR.txt_img.Text;
                 _HR.pb_img.Image.Save(path);
-                int k = hRRepository.updateOne(_HR.txt_name.Text, _HR.txt_img.Text, DateTime.Parse(_HR.dtp_dob.Text), genderToBool(_HR.cb_gender.Text), _HR.cb_department.Text, _HR.cb_typeJob.Text, SystemConstant.STAFF_MEMORY.Msnv);
+                int k = hRRepository.updateOne(_HR.txt_name.Text, _HR.txt_img.Text, DateTime.Parse(_HR.dtp_dob.Text), genderToBool(_HR.cb_gender.Text), _HR.cb_department.Text, _HR.cb_typeJob.Text, _HR.lbl_manv.Text);
                 if (k == 0)
                 {
                     MessageBox.Show("Cập nhập thất bại");
@@ -73,7 +81,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 else
                 {
                     MessageBox.Show("Cập nhập thành công");
-                    SystemConstant.STAFF_MEMORY.Msnv = null;
+                    freeMemory();
                 }
             }
             catch (Exception e)
@@ -92,7 +100,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 
                 if (d == DialogResult.Yes)
                 {
-                    int k = hRRepository.deleteOne(SystemConstant.STAFF_MEMORY.Msnv);
+                    int k = hRRepository.deleteOne(_HR.lbl_manv.Text);
                     if (k == 0)
                     {
                         MessageBox.Show("Xóa thất bại");
@@ -100,7 +108,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                     else
                     {
                         MessageBox.Show("Xóa thành công");
-                        SystemConstant.STAFF_MEMORY.Msnv = null;
+                        freeMemory();
                     }
                 }
                 else

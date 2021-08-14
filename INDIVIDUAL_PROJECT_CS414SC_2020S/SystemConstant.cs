@@ -12,11 +12,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S
     {
         public static User USER_MEMORY = null;
         public static Luong LUONG_MEMORY = null;
-        /*public static string USERNAME = null;
-        public static string PASSWORD = null;
-        public static string AVATAR = null;
-        public static string FULLNAME = null;
-        public static string ID = null;*/
+        public static Role ROLE_MEMORY = null;
         public static List<string> ROLES = new List<string>();
 
         public static string PATH_BASE_STAFF = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\img\\avatar\\staff\\";

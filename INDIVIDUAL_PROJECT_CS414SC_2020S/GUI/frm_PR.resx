@@ -121,11 +121,122 @@
   <data name="tabPage1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <metadata name="label2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 34</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 15</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>202</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>(Chỉ xử lý sửa hoặc xóa)</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="lbl_maluong_part.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lbl_maluong_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="lbl_maluong_part.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_maluong_part.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="lbl_maluong_part.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 49</value>
+  </data>
+  <data name="lbl_maluong_part.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 20</value>
+  </data>
+  <data name="lbl_maluong_part.TabIndex" type="System.Int32, mscorlib">
+    <value>201</value>
+  </data>
+  <data name="lbl_maluong_part.Text" xml:space="preserve">
+    <value>Kích đúp hàng cần sửa hoặc xóa</value>
+  </data>
+  <data name="&gt;&gt;lbl_maluong_part.Name" xml:space="preserve">
+    <value>lbl_maluong_part</value>
+  </data>
+  <data name="&gt;&gt;lbl_maluong_part.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_maluong_part.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;lbl_maluong_part.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="label3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 49</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Mã lương</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="txt_songay_part.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txt_songay_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txt_songay_part.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
@@ -226,7 +337,7 @@
     <value>31</value>
   </data>
   <data name="txt_songay_part.Location" type="System.Drawing.Point, System.Drawing">
-    <value>429, 102</value>
+    <value>454, 134</value>
   </data>
   <data name="txt_songay_part.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 28</value>
@@ -244,8 +355,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;txt_songay_part.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
+  <metadata name="txt_sogio.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txt_sogio.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -328,7 +442,7 @@
     <value>24</value>
   </data>
   <data name="txt_sogio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>429, 59</value>
+    <value>454, 91</value>
   </data>
   <data name="txt_sogio.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 28</value>
@@ -346,8 +460,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;txt_sogio.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
+  <metadata name="btn_free_part.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btn_free_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -361,7 +478,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_free_part.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 184</value>
+    <value>639, 215</value>
   </data>
   <data name="btn_free_part.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 50</value>
@@ -382,8 +499,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;btn_free_part.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
+  <metadata name="btn_del_part.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btn_del_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -397,7 +517,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_del_part.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 184</value>
+    <value>428, 215</value>
   </data>
   <data name="btn_del_part.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 50</value>
@@ -418,8 +538,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;btn_del_part.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
+  <metadata name="btn_update_part.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btn_update_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -433,7 +556,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_update_part.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 184</value>
+    <value>215, 215</value>
   </data>
   <data name="btn_update_part.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 50</value>
@@ -454,8 +577,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;btn_update_part.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
+  <metadata name="btn_add_part.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btn_add_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -469,7 +595,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_add_part.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 184</value>
+    <value>10, 215</value>
   </data>
   <data name="btn_add_part.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 50</value>
@@ -490,8 +616,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;btn_add_part.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
+  <metadata name="cb_nhanvien_part.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="cb_nhanvien_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -499,7 +628,7 @@
     <value>Segoe UI, 11pt</value>
   </data>
   <data name="cb_nhanvien_part.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 14</value>
+    <value>117, 90</value>
   </data>
   <data name="cb_nhanvien_part.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 28</value>
@@ -517,8 +646,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;cb_nhanvien_part.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
+  <metadata name="pb_img_part.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pb_img_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -526,7 +658,7 @@
     <value>NoControl</value>
   </data>
   <data name="pb_img_part.Location" type="System.Drawing.Point, System.Drawing">
-    <value>646, -43</value>
+    <value>672, -5</value>
   </data>
   <data name="pb_img_part.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 206</value>
@@ -544,16 +676,19 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;pb_img_part.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
+  <metadata name="dataGridView_part.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="dataGridView_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="dataGridView_part.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 251</value>
+    <value>8, 282</value>
   </data>
   <data name="dataGridView_part.Size" type="System.Drawing.Size, System.Drawing">
-    <value>793, 287</value>
+    <value>825, 287</value>
   </data>
   <data name="dataGridView_part.TabIndex" type="System.Int32, mscorlib">
     <value>192</value>
@@ -568,8 +703,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;dataGridView_part.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
+  <metadata name="label6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -583,7 +721,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 105</value>
+    <value>349, 137</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 20</value>
@@ -604,8 +742,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
+  <metadata name="txt_luong1gio.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txt_luong1gio.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -613,7 +754,7 @@
     <value>Segoe UI, 11pt</value>
   </data>
   <data name="txt_luong1gio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>429, 18</value>
+    <value>454, 50</value>
   </data>
   <data name="txt_luong1gio.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 27</value>
@@ -631,8 +772,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;txt_luong1gio.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
+  <metadata name="txt_luongThuong_part.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txt_luongThuong_part.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -640,7 +784,7 @@
     <value>Segoe UI, 11pt</value>
   </data>
   <data name="txt_luongThuong_part.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 60</value>
+    <value>117, 136</value>
   </data>
   <data name="txt_luongThuong_part.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 27</value>
@@ -658,8 +802,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;txt_luongThuong_part.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
+  <metadata name="label7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -673,7 +820,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 63</value>
+    <value>349, 95</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 20</value>
@@ -694,8 +841,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
+  <metadata name="label8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -709,7 +859,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 21</value>
+    <value>349, 53</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 20</value>
@@ -730,8 +880,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
+  <metadata name="Giơi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="Giơi.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -745,7 +898,7 @@
     <value>NoControl</value>
   </data>
   <data name="Giơi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 63</value>
+    <value>11, 139</value>
   </data>
   <data name="Giơi.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 20</value>
@@ -766,8 +919,11 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;Giơi.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
+  <metadata name="label5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -781,7 +937,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 18</value>
+    <value>11, 94</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 20</value>
@@ -802,7 +958,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>18</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
@@ -811,7 +967,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 553</value>
+    <value>854, 601</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -831,6 +987,126 @@
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="label4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 8</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 15</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>225</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>(Chỉ xử lý sửa hoặc xóa)</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="lbl_maluong_full.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lbl_maluong_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="lbl_maluong_full.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_maluong_full.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="lbl_maluong_full.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_maluong_full.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 23</value>
+  </data>
+  <data name="lbl_maluong_full.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 20</value>
+  </data>
+  <data name="lbl_maluong_full.TabIndex" type="System.Int32, mscorlib">
+    <value>224</value>
+  </data>
+  <data name="lbl_maluong_full.Text" xml:space="preserve">
+    <value>Kích đúp hàng cần sửa hoặc xóa</value>
+  </data>
+  <data name="&gt;&gt;lbl_maluong_full.Name" xml:space="preserve">
+    <value>lbl_maluong_full</value>
+  </data>
+  <data name="&gt;&gt;lbl_maluong_full.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_maluong_full.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;lbl_maluong_full.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="label10.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="label10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>223</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Mã lương</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="txt_songay.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txt_songay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -913,7 +1189,7 @@
     <value>24</value>
   </data>
   <data name="txt_songay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 56</value>
+    <value>450, 104</value>
   </data>
   <data name="txt_songay.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 28</value>
@@ -931,8 +1207,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;txt_songay.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
+  <metadata name="btn_free_full.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btn_free_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -946,7 +1225,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_free_full.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 184</value>
+    <value>631, 232</value>
   </data>
   <data name="btn_free_full.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 50</value>
@@ -967,8 +1246,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;btn_free_full.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
+  <metadata name="btn_del_full.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btn_del_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -982,7 +1264,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_del_full.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 184</value>
+    <value>434, 232</value>
   </data>
   <data name="btn_del_full.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 50</value>
@@ -1003,8 +1285,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;btn_del_full.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
+  <metadata name="btn_update_full.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btn_update_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1018,7 +1303,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_update_full.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 184</value>
+    <value>234, 232</value>
   </data>
   <data name="btn_update_full.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 50</value>
@@ -1039,8 +1324,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;btn_update_full.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
+  <metadata name="btn_add_full.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btn_add_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1054,7 +1342,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_add_full.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 184</value>
+    <value>34, 232</value>
   </data>
   <data name="btn_add_full.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 50</value>
@@ -1075,8 +1363,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;btn_add_full.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
+  <metadata name="cb_nhanvien_full.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="cb_nhanvien_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1084,7 +1375,7 @@
     <value>Segoe UI, 11pt</value>
   </data>
   <data name="cb_nhanvien_full.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 14</value>
+    <value>134, 62</value>
   </data>
   <data name="cb_nhanvien_full.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 28</value>
@@ -1102,8 +1393,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;cb_nhanvien_full.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
+  <metadata name="pb_img_full.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pb_img_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1111,7 +1405,7 @@
     <value>NoControl</value>
   </data>
   <data name="pb_img_full.Location" type="System.Drawing.Point, System.Drawing">
-    <value>646, -48</value>
+    <value>664, 0</value>
   </data>
   <data name="pb_img_full.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 206</value>
@@ -1129,13 +1423,16 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;pb_img_full.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
+  <metadata name="dataGridView_full.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="dataGridView_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="dataGridView_full.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 251</value>
+    <value>32, 299</value>
   </data>
   <data name="dataGridView_full.Size" type="System.Drawing.Size, System.Drawing">
     <value>793, 287</value>
@@ -1153,8 +1450,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;dataGridView_full.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
+  <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1168,7 +1468,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 59</value>
+    <value>345, 107</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 20</value>
@@ -1189,8 +1489,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
+  <metadata name="txt_luong1ngay.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txt_luong1ngay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1198,7 +1501,7 @@
     <value>Segoe UI, 11pt</value>
   </data>
   <data name="txt_luong1ngay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 16</value>
+    <value>450, 64</value>
   </data>
   <data name="txt_luong1ngay.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 27</value>
@@ -1216,8 +1519,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;txt_luong1ngay.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
+  <metadata name="txt_hesl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txt_hesl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1225,7 +1531,7 @@
     <value>Segoe UI, 11pt</value>
   </data>
   <data name="txt_hesl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 95</value>
+    <value>134, 143</value>
   </data>
   <data name="txt_hesl.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 27</value>
@@ -1243,8 +1549,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;txt_hesl.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
+  <metadata name="txt_luongThuong_full.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txt_luongThuong_full.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1252,7 +1561,7 @@
     <value>Segoe UI, 11pt</value>
   </data>
   <data name="txt_luongThuong_full.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 95</value>
+    <value>451, 143</value>
   </data>
   <data name="txt_luongThuong_full.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 27</value>
@@ -1270,8 +1579,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;txt_luongThuong_full.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
+  <metadata name="label11.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1285,7 +1597,7 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 19</value>
+    <value>345, 67</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1306,8 +1618,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
+  <metadata name="label12.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1321,7 +1636,7 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 98</value>
+    <value>345, 146</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 20</value>
@@ -1342,8 +1657,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
+  <metadata name="label13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1357,7 +1675,7 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 96</value>
+    <value>28, 144</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 20</value>
@@ -1378,8 +1696,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
+  <metadata name="label14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label14.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1393,7 +1714,7 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 18</value>
+    <value>28, 66</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 20</value>
@@ -1414,8 +1735,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>18</value>
   </data>
+  <metadata name="txt_luongcb.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txt_luongcb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1423,7 +1747,7 @@
     <value>Segoe UI, 11pt</value>
   </data>
   <data name="txt_luongcb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 56</value>
+    <value>134, 104</value>
   </data>
   <data name="txt_luongcb.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 27</value>
@@ -1441,8 +1765,11 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;txt_luongcb.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>19</value>
   </data>
+  <metadata name="label15.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label15.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1456,7 +1783,7 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 59</value>
+    <value>28, 107</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -1477,7 +1804,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>20</value>
   </data>
   <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
@@ -1486,7 +1813,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 553</value>
+    <value>854, 601</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1516,7 +1843,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>825, 586</value>
+    <value>862, 634</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1543,7 +1870,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>825, 586</value>
+    <value>862, 634</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

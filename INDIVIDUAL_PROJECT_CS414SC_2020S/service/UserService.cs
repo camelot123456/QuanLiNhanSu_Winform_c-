@@ -130,7 +130,6 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                     );
 
                         MessageBox.Show("Thêm tài khoản mới thành công");
-                        _CreateAccount.Close();
                     }
                     catch (Exception e)
                     {
@@ -191,6 +190,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             if (OFD.ShowDialog() == DialogResult.OK)    //  .OK chứ ko phải .YES
             {
                 _MyAcc.pb_avatar.Image = Image.FromFile(OFD.FileName);
+                _MyAcc.pb_avatar.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
     }

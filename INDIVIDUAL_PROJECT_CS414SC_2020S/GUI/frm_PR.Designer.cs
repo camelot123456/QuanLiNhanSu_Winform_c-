@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_PR));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txt_songay_part = new System.Windows.Forms.ComboBox();
+            this.txt_sogio = new System.Windows.Forms.ComboBox();
             this.btn_free_part = new System.Windows.Forms.Button();
             this.btn_del_part = new System.Windows.Forms.Button();
             this.btn_update_part = new System.Windows.Forms.Button();
@@ -39,12 +41,14 @@
             this.pb_img_part = new System.Windows.Forms.PictureBox();
             this.dataGridView_part = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
+            this.txt_luong1gio = new System.Windows.Forms.TextBox();
             this.txt_luongThuong_part = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Giơi = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txt_songay = new System.Windows.Forms.ComboBox();
             this.btn_free_full = new System.Windows.Forms.Button();
             this.btn_del_full = new System.Windows.Forms.Button();
             this.btn_update_full = new System.Windows.Forms.Button();
@@ -62,10 +66,12 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txt_luongcb = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txt_luong1gio = new System.Windows.Forms.TextBox();
-            this.txt_sogio = new System.Windows.Forms.ComboBox();
-            this.txt_songay_part = new System.Windows.Forms.ComboBox();
-            this.txt_songay = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_maluong_part = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_maluong_full = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_part)).BeginInit();
@@ -87,6 +93,9 @@
             // tabPage1
             // 
             resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.lbl_maluong_part);
+            this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.txt_songay_part);
             this.tabPage1.Controls.Add(this.txt_sogio);
             this.tabPage1.Controls.Add(this.btn_free_part);
@@ -105,6 +114,77 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txt_songay_part
+            // 
+            resources.ApplyResources(this.txt_songay_part, "txt_songay_part");
+            this.txt_songay_part.FormattingEnabled = true;
+            this.txt_songay_part.Items.AddRange(new object[] {
+            resources.GetString("txt_songay_part.Items"),
+            resources.GetString("txt_songay_part.Items1"),
+            resources.GetString("txt_songay_part.Items2"),
+            resources.GetString("txt_songay_part.Items3"),
+            resources.GetString("txt_songay_part.Items4"),
+            resources.GetString("txt_songay_part.Items5"),
+            resources.GetString("txt_songay_part.Items6"),
+            resources.GetString("txt_songay_part.Items7"),
+            resources.GetString("txt_songay_part.Items8"),
+            resources.GetString("txt_songay_part.Items9"),
+            resources.GetString("txt_songay_part.Items10"),
+            resources.GetString("txt_songay_part.Items11"),
+            resources.GetString("txt_songay_part.Items12"),
+            resources.GetString("txt_songay_part.Items13"),
+            resources.GetString("txt_songay_part.Items14"),
+            resources.GetString("txt_songay_part.Items15"),
+            resources.GetString("txt_songay_part.Items16"),
+            resources.GetString("txt_songay_part.Items17"),
+            resources.GetString("txt_songay_part.Items18"),
+            resources.GetString("txt_songay_part.Items19"),
+            resources.GetString("txt_songay_part.Items20"),
+            resources.GetString("txt_songay_part.Items21"),
+            resources.GetString("txt_songay_part.Items22"),
+            resources.GetString("txt_songay_part.Items23"),
+            resources.GetString("txt_songay_part.Items24"),
+            resources.GetString("txt_songay_part.Items25"),
+            resources.GetString("txt_songay_part.Items26"),
+            resources.GetString("txt_songay_part.Items27"),
+            resources.GetString("txt_songay_part.Items28"),
+            resources.GetString("txt_songay_part.Items29"),
+            resources.GetString("txt_songay_part.Items30"),
+            resources.GetString("txt_songay_part.Items31")});
+            this.txt_songay_part.Name = "txt_songay_part";
+            // 
+            // txt_sogio
+            // 
+            resources.ApplyResources(this.txt_sogio, "txt_sogio");
+            this.txt_sogio.FormattingEnabled = true;
+            this.txt_sogio.Items.AddRange(new object[] {
+            resources.GetString("txt_sogio.Items"),
+            resources.GetString("txt_sogio.Items1"),
+            resources.GetString("txt_sogio.Items2"),
+            resources.GetString("txt_sogio.Items3"),
+            resources.GetString("txt_sogio.Items4"),
+            resources.GetString("txt_sogio.Items5"),
+            resources.GetString("txt_sogio.Items6"),
+            resources.GetString("txt_sogio.Items7"),
+            resources.GetString("txt_sogio.Items8"),
+            resources.GetString("txt_sogio.Items9"),
+            resources.GetString("txt_sogio.Items10"),
+            resources.GetString("txt_sogio.Items11"),
+            resources.GetString("txt_sogio.Items12"),
+            resources.GetString("txt_sogio.Items13"),
+            resources.GetString("txt_sogio.Items14"),
+            resources.GetString("txt_sogio.Items15"),
+            resources.GetString("txt_sogio.Items16"),
+            resources.GetString("txt_sogio.Items17"),
+            resources.GetString("txt_sogio.Items18"),
+            resources.GetString("txt_sogio.Items19"),
+            resources.GetString("txt_sogio.Items20"),
+            resources.GetString("txt_sogio.Items21"),
+            resources.GetString("txt_sogio.Items22"),
+            resources.GetString("txt_sogio.Items23"),
+            resources.GetString("txt_sogio.Items24")});
+            this.txt_sogio.Name = "txt_sogio";
             // 
             // btn_free_part
             // 
@@ -181,6 +261,11 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
+            // txt_luong1gio
+            // 
+            resources.ApplyResources(this.txt_luong1gio, "txt_luong1gio");
+            this.txt_luong1gio.Name = "txt_luong1gio";
+            // 
             // txt_luongThuong_part
             // 
             resources.ApplyResources(this.txt_luongThuong_part, "txt_luongThuong_part");
@@ -208,6 +293,9 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.lbl_maluong_full);
+            this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.txt_songay);
             this.tabPage2.Controls.Add(this.btn_free_full);
             this.tabPage2.Controls.Add(this.btn_del_full);
@@ -229,6 +317,38 @@
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // txt_songay
+            // 
+            resources.ApplyResources(this.txt_songay, "txt_songay");
+            this.txt_songay.FormattingEnabled = true;
+            this.txt_songay.Items.AddRange(new object[] {
+            resources.GetString("txt_songay.Items"),
+            resources.GetString("txt_songay.Items1"),
+            resources.GetString("txt_songay.Items2"),
+            resources.GetString("txt_songay.Items3"),
+            resources.GetString("txt_songay.Items4"),
+            resources.GetString("txt_songay.Items5"),
+            resources.GetString("txt_songay.Items6"),
+            resources.GetString("txt_songay.Items7"),
+            resources.GetString("txt_songay.Items8"),
+            resources.GetString("txt_songay.Items9"),
+            resources.GetString("txt_songay.Items10"),
+            resources.GetString("txt_songay.Items11"),
+            resources.GetString("txt_songay.Items12"),
+            resources.GetString("txt_songay.Items13"),
+            resources.GetString("txt_songay.Items14"),
+            resources.GetString("txt_songay.Items15"),
+            resources.GetString("txt_songay.Items16"),
+            resources.GetString("txt_songay.Items17"),
+            resources.GetString("txt_songay.Items18"),
+            resources.GetString("txt_songay.Items19"),
+            resources.GetString("txt_songay.Items20"),
+            resources.GetString("txt_songay.Items21"),
+            resources.GetString("txt_songay.Items22"),
+            resources.GetString("txt_songay.Items23"),
+            resources.GetString("txt_songay.Items24")});
+            this.txt_songay.Name = "txt_songay";
             // 
             // btn_free_full
             // 
@@ -349,113 +469,37 @@
             resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
             // 
-            // txt_luong1gio
+            // label2
             // 
-            resources.ApplyResources(this.txt_luong1gio, "txt_luong1gio");
-            this.txt_luong1gio.Name = "txt_luong1gio";
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Name = "label2";
             // 
-            // txt_sogio
+            // lbl_maluong_part
             // 
-            resources.ApplyResources(this.txt_sogio, "txt_sogio");
-            this.txt_sogio.FormattingEnabled = true;
-            this.txt_sogio.Items.AddRange(new object[] {
-            resources.GetString("txt_sogio.Items"),
-            resources.GetString("txt_sogio.Items1"),
-            resources.GetString("txt_sogio.Items2"),
-            resources.GetString("txt_sogio.Items3"),
-            resources.GetString("txt_sogio.Items4"),
-            resources.GetString("txt_sogio.Items5"),
-            resources.GetString("txt_sogio.Items6"),
-            resources.GetString("txt_sogio.Items7"),
-            resources.GetString("txt_sogio.Items8"),
-            resources.GetString("txt_sogio.Items9"),
-            resources.GetString("txt_sogio.Items10"),
-            resources.GetString("txt_sogio.Items11"),
-            resources.GetString("txt_sogio.Items12"),
-            resources.GetString("txt_sogio.Items13"),
-            resources.GetString("txt_sogio.Items14"),
-            resources.GetString("txt_sogio.Items15"),
-            resources.GetString("txt_sogio.Items16"),
-            resources.GetString("txt_sogio.Items17"),
-            resources.GetString("txt_sogio.Items18"),
-            resources.GetString("txt_sogio.Items19"),
-            resources.GetString("txt_sogio.Items20"),
-            resources.GetString("txt_sogio.Items21"),
-            resources.GetString("txt_sogio.Items22"),
-            resources.GetString("txt_sogio.Items23"),
-            resources.GetString("txt_sogio.Items24")});
-            this.txt_sogio.Name = "txt_sogio";
+            resources.ApplyResources(this.lbl_maluong_part, "lbl_maluong_part");
+            this.lbl_maluong_part.Name = "lbl_maluong_part";
             // 
-            // txt_songay_part
+            // label3
             // 
-            resources.ApplyResources(this.txt_songay_part, "txt_songay_part");
-            this.txt_songay_part.FormattingEnabled = true;
-            this.txt_songay_part.Items.AddRange(new object[] {
-            resources.GetString("txt_songay_part.Items"),
-            resources.GetString("txt_songay_part.Items1"),
-            resources.GetString("txt_songay_part.Items2"),
-            resources.GetString("txt_songay_part.Items3"),
-            resources.GetString("txt_songay_part.Items4"),
-            resources.GetString("txt_songay_part.Items5"),
-            resources.GetString("txt_songay_part.Items6"),
-            resources.GetString("txt_songay_part.Items7"),
-            resources.GetString("txt_songay_part.Items8"),
-            resources.GetString("txt_songay_part.Items9"),
-            resources.GetString("txt_songay_part.Items10"),
-            resources.GetString("txt_songay_part.Items11"),
-            resources.GetString("txt_songay_part.Items12"),
-            resources.GetString("txt_songay_part.Items13"),
-            resources.GetString("txt_songay_part.Items14"),
-            resources.GetString("txt_songay_part.Items15"),
-            resources.GetString("txt_songay_part.Items16"),
-            resources.GetString("txt_songay_part.Items17"),
-            resources.GetString("txt_songay_part.Items18"),
-            resources.GetString("txt_songay_part.Items19"),
-            resources.GetString("txt_songay_part.Items20"),
-            resources.GetString("txt_songay_part.Items21"),
-            resources.GetString("txt_songay_part.Items22"),
-            resources.GetString("txt_songay_part.Items23"),
-            resources.GetString("txt_songay_part.Items24"),
-            resources.GetString("txt_songay_part.Items25"),
-            resources.GetString("txt_songay_part.Items26"),
-            resources.GetString("txt_songay_part.Items27"),
-            resources.GetString("txt_songay_part.Items28"),
-            resources.GetString("txt_songay_part.Items29"),
-            resources.GetString("txt_songay_part.Items30"),
-            resources.GetString("txt_songay_part.Items31")});
-            this.txt_songay_part.Name = "txt_songay_part";
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
-            // txt_songay
+            // label4
             // 
-            resources.ApplyResources(this.txt_songay, "txt_songay");
-            this.txt_songay.FormattingEnabled = true;
-            this.txt_songay.Items.AddRange(new object[] {
-            resources.GetString("txt_songay.Items"),
-            resources.GetString("txt_songay.Items1"),
-            resources.GetString("txt_songay.Items2"),
-            resources.GetString("txt_songay.Items3"),
-            resources.GetString("txt_songay.Items4"),
-            resources.GetString("txt_songay.Items5"),
-            resources.GetString("txt_songay.Items6"),
-            resources.GetString("txt_songay.Items7"),
-            resources.GetString("txt_songay.Items8"),
-            resources.GetString("txt_songay.Items9"),
-            resources.GetString("txt_songay.Items10"),
-            resources.GetString("txt_songay.Items11"),
-            resources.GetString("txt_songay.Items12"),
-            resources.GetString("txt_songay.Items13"),
-            resources.GetString("txt_songay.Items14"),
-            resources.GetString("txt_songay.Items15"),
-            resources.GetString("txt_songay.Items16"),
-            resources.GetString("txt_songay.Items17"),
-            resources.GetString("txt_songay.Items18"),
-            resources.GetString("txt_songay.Items19"),
-            resources.GetString("txt_songay.Items20"),
-            resources.GetString("txt_songay.Items21"),
-            resources.GetString("txt_songay.Items22"),
-            resources.GetString("txt_songay.Items23"),
-            resources.GetString("txt_songay.Items24")});
-            this.txt_songay.Name = "txt_songay";
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Name = "label4";
+            // 
+            // lbl_maluong_full
+            // 
+            resources.ApplyResources(this.lbl_maluong_full, "lbl_maluong_full");
+            this.lbl_maluong_full.Name = "lbl_maluong_full";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
             // 
             // frm_PR
             // 
@@ -517,5 +561,11 @@
         public System.Windows.Forms.ComboBox txt_sogio;
         public System.Windows.Forms.TextBox txt_luong1gio;
         public System.Windows.Forms.ComboBox txt_songay;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label lbl_maluong_part;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label lbl_maluong_full;
+        private System.Windows.Forms.Label label10;
     }
 }

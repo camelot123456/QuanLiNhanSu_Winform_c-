@@ -22,6 +22,12 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             pRRepository = new PRRepository();
         }
 
+        public void freeMemory()
+        {
+            SystemConstant.LUONG_MEMORY = null;
+            _PR.lbl_maluong_full.Text = "Kích đúp hàng cần sửa hoặc xóa";
+            _PR.lbl_maluong_part.Text = "Kích đúp hàng cần sửa hoặc xóa";
+        }
 
         public void handlerUploadImg()
         {
@@ -97,7 +103,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                         Convert.ToDouble(_PR.txt_luong1ngay.Text),
                         Convert.ToDouble(_PR.txt_songay.Text),
                         Convert.ToDouble(_PR.txt_luongThuong_full.Text),
-                        SystemConstant.LUONG_MEMORY.MaLuong
+                        _PR.lbl_maluong_full.Text
                     );
                 if (k == 0)
                 {
@@ -106,7 +112,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 else
                 {
                     MessageBox.Show("Cập nhập thành công");
-                    SystemConstant.LUONG_MEMORY = null;
+                    freeMemory();
                 }
             }
             catch (Exception e)
@@ -152,7 +158,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                         Convert.ToDouble(_PR.txt_songay_part.Text),
                         Convert.ToDouble(_PR.txt_sogio.Text),
                         Convert.ToDouble(_PR.txt_luongThuong_part.Text),
-                        SystemConstant.LUONG_MEMORY.MaLuong
+                        _PR.lbl_maluong_part.Text
                     );
                 if (k == 0)
                 {
@@ -161,7 +167,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 else
                 {
                     MessageBox.Show("Cập nhập thành công");
-                    SystemConstant.LUONG_MEMORY = null;
+                    freeMemory();
                 }
             }
             catch (Exception e)
@@ -170,7 +176,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             }
         }
 
-        public void handlerBtnDelete()
+        public void handlerBtnDeleteFull()
         {
             try
             {
@@ -179,7 +185,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 if (d == DialogResult.Yes)
                 {
 
-                    int k = pRRepository.deleteOne(SystemConstant.LUONG_MEMORY.MaLuong == null?"-1":SystemConstant.LUONG_MEMORY.MaLuong);
+                    int k = pRRepository.deleteOne(_PR.lbl_maluong_full.Text);
                     if (k == 0)
                     {
                         MessageBox.Show("Xóa thất bại");
@@ -187,7 +193,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                     else
                     {
                         MessageBox.Show("Xóa thành công");
-                        SystemConstant.LUONG_MEMORY = null;
+                        freeMemory();
                     }
                 }
                 else
@@ -201,9 +207,35 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             }
         }
 
-        public void handlerBtnFreeMem()
+        public void handlerBtnDeletePart()
         {
-            SystemConstant.LUONG_MEMORY = null;
+            try
+            {
+                DialogResult d = MessageBox.Show("Bạn có muốn xóa không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (d == DialogResult.Yes)
+                {
+
+                    int k = pRRepository.deleteOne(_PR.lbl_maluong_part.Text);
+                    if (k == 0)
+                    {
+                        MessageBox.Show("Xóa thất bại");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa thành công");
+                        freeMemory();
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
     }
 }

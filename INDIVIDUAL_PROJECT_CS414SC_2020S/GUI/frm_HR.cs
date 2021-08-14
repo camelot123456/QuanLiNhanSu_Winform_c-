@@ -73,23 +73,13 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
             cb_department.Text = dataGridView1.CurrentRow.Cells["PHONGBAN"].Value.ToString();
             cb_typeJob.Text = dataGridView1.CurrentRow.Cells["LOAICONGVIEC"].Value.ToString();
             pb_img.ImageLocation = SystemConstant.PATH_BASE_STAFF + txt_img.Text;
+            pb_img.SizeMode = PictureBoxSizeMode.StretchImage;
+            lbl_manv.Text = SystemConstant.STAFF_MEMORY.Msnv;
         }
 
         private void btn_free_Click(object sender, EventArgs e)
         {
-            SystemConstant.STAFF_MEMORY.Msnv = "-1";
-        }
-
-        private void label1_Validated(object sender, EventArgs e)
-        {
-            if (SystemConstant.STAFF_MEMORY.Msnv != null)
-            {
-                lbl_ThongBao.Text = "Mã nhân viên đã được lưu vào vùng nhớ tạm, chọn Cập nhập hoặc xóa hoặc xóa id để giải phóng";
-            }
-            else
-            {
-                lbl_ThongBao.Text = "";
-            }
+            hRService.freeMemory();
         }
     }
 }

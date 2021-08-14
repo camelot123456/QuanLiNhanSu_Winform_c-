@@ -45,14 +45,14 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
 
         private void btn_del_part_Click(object sender, EventArgs e)
         {
-            pRService.handlerBtnDelete();
+            pRService.handlerBtnDeletePart();
             pRService.handlerLoadCb_manv_part();
             pRService.handlerLoadDataListPart();
         }
 
         private void btn_free_part_Click(object sender, EventArgs e)
         {
-            SystemConstant.LUONG_MEMORY = null;
+            pRService.freeMemory();
         }
 
         private void dataGridView_part_DoubleClick(object sender, EventArgs e)
@@ -63,7 +63,9 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
             txt_songay_part.Text = dataGridView_part.CurrentRow.Cells["SONGAYLAM"].Value.ToString();
             txt_sogio.Text = dataGridView_part.CurrentRow.Cells["SOGIOLAM"].Value.ToString();
             txt_luongThuong_part.Text = dataGridView_part.CurrentRow.Cells["LUONGTHUONG"].Value.ToString();
-            //pb_img.ImageLocation = SystemConstant.PATH_BASE_STAFF + txt_img.Text;
+            lbl_maluong_part.Text = SystemConstant.LUONG_MEMORY.MaLuong;
+            pb_img_part.ImageLocation = SystemConstant.PATH_BASE_STAFF + dataGridView_part.CurrentRow.Cells["AVATAR"].Value.ToString();
+            pb_img_part.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void pb_img_part_Click(object sender, EventArgs e)
@@ -87,14 +89,14 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
 
         private void btn_del_full_Click(object sender, EventArgs e)
         {
-            pRService.handlerBtnDelete();
+            pRService.handlerBtnDeleteFull();
             pRService.handlerLoadCb_manv_full();
             pRService.handlerLoadDataListFull();
         }
 
         private void btn_free_full_Click(object sender, EventArgs e)
         {
-            SystemConstant.LUONG_MEMORY = null;
+            pRService.freeMemory();
         }
 
         private void dataGridView_full_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -106,7 +108,9 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
             txt_luong1ngay.Text = dataGridView_full.CurrentRow.Cells["LUONG1NGAY"].Value.ToString();
             txt_songay.Text = dataGridView_full.CurrentRow.Cells["SONGAYLAM"].Value.ToString();
             txt_luongThuong_full.Text = dataGridView_full.CurrentRow.Cells["LUONGTHUONG"].Value.ToString();
-            //pb_img.ImageLocation = SystemConstant.PATH_BASE_STAFF + txt_img.Text;
+            pb_img_full.ImageLocation = SystemConstant.PATH_BASE_STAFF + dataGridView_part.CurrentRow.Cells["AVATAR"].Value.ToString();
+            pb_img_full.SizeMode = PictureBoxSizeMode.StretchImage;
+            lbl_maluong_full.Text = SystemConstant.LUONG_MEMORY.MaLuong;
         }
     }
 }

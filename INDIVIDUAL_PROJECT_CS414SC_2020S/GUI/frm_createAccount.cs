@@ -35,5 +35,25 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
         {
             userService.handlerValidatePassword();
         }
+
+        private void pb_avatar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog OFD = new OpenFileDialog();
+            //OFD.Title = "Hãy chọn ảnh";
+            OFD.Filter = "Hãy chọn ảnh jpg|*.jpg|png|*.png|tất cả ảnh|*.*";   // Lọc ảnh
+            if (OFD.ShowDialog() == DialogResult.OK)    //  .OK chứ ko phải .YES
+            {
+                pb_avatar.Image = Image.FromFile(OFD.FileName);
+                pb_avatar.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
+
+        private void btn_changePass_Click(object sender, EventArgs e)
+        {
+            txt_fullname.Text = "";
+            txt_pass.Text = "";
+            txt_username.Text = "";
+            txt_validatePass.Text = "";
+        }
     }
 }
