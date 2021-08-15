@@ -1,4 +1,5 @@
-﻿using INDIVIDUAL_PROJECT_CS414SC_2020S.service;
+﻿using INDIVIDUAL_PROJECT_CS414SC_2020S.GUI;
+using INDIVIDUAL_PROJECT_CS414SC_2020S.service;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,11 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S
         private void frm_login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void llbl_quenPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new frm_showAccountDefault().Show();
         }
     }
 }

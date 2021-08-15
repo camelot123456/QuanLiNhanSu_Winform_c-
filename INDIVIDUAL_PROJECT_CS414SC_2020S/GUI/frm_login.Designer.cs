@@ -36,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.llbl_quenPass = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txt_user
@@ -89,11 +90,20 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(28)))));
             this.label2.Name = "label2";
             // 
+            // llbl_quenPass
+            // 
+            resources.ApplyResources(this.llbl_quenPass, "llbl_quenPass");
+            this.llbl_quenPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(28)))));
+            this.llbl_quenPass.Name = "llbl_quenPass";
+            this.llbl_quenPass.TabStop = true;
+            this.llbl_quenPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbl_quenPass_LinkClicked);
+            // 
             // frm_login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.llbl_quenPass);
             this.Controls.Add(this.txt_user);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.lbl_warning_login);
@@ -118,6 +128,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.LinkLabel llbl_quenPass;
     }
 }
 

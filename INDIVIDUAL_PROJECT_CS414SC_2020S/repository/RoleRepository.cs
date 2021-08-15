@@ -18,25 +18,26 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
 
         public DataTable find()
         {
-            string sql = "SELECT * FROM [ROLE]";
+            string sql = "SELECT * FROM [ROLE] WHERE USERNAME NOT IN ('CEO', 'HR', 'PR')";
             return dao.queryForList(sql);
         }
 
         public DataTable findUserAndRole()
         {
-            string sql = "SELECT R.IDROLE, U.FULLNAME, R.USERNAME, R.ROLECODE, U.IDUSER FROM [USER] U, [ROLE] R WHERE U.USERNAME = R.USERNAME";
+            string sql = "SELECT R.IDROLE, U.FULLNAME, R.USERNAME, R.ROLECODE, U.IDUSER FROM [USER] U, [ROLE] R " +
+                "WHERE U.USERNAME = R.USERNAME AND R.USERNAME NOT IN ('CEO', 'HR', 'PR')";
             return dao.queryForList(sql);
         }
 
         public DataTable findUser()
         {
-            string sql = "SELECT DISTINCT USERNAME FROM [USER]";
+            string sql = "SELECT DISTINCT USERNAME FROM [USER] WHERE USERNAME NOT IN ('CEO', 'HR', 'PR')";
             return dao.queryForList(sql);
         }
 
         public DataTable findRole()
         {
-            string sql = "SELECT DISTINCT ROLECODE FROM [ROLE]";
+            string sql = "SELECT DISTINCT ROLECODE FROM [ROLE] WHERE USERNAME NOT IN ('CEO', 'HR', 'PR')";
             return dao.queryForList(sql);
         }
 

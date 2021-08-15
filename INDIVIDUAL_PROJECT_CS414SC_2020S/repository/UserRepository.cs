@@ -18,7 +18,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
 
         public DataTable find()
         {
-            string sql = "SELECT * FROM [USER]";
+            string sql = "SELECT * FROM [USER] WHERE USERNAME NOT IN ('CEO', 'HR', 'PR')";
             return dao.queryForList(sql);
         }
 
