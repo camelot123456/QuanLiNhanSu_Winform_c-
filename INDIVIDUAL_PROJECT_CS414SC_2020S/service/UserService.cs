@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -180,7 +181,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
         public void handlerValidateUsername()
         {
             bool k = false;
-            foreach (DataRow row in userRepository.find().Rows)
+            foreach (DataRow row in userRepository.findNotDefault().Rows)
             {
                 if (_CreateAccount.txt_username.Text.Equals(row["USERNAME"].ToString()))
                 {
@@ -246,6 +247,21 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                     if (k > 0)
                     {
                         MessageBox.Show("Xóa thành công");
+
+                        string filePath = SystemConstant.PATH_BASE_ACCOUNT + SystemConstant.USER_MEMORY.Avatar;
+
+                        if (File.Exists(filePath))
+                        {
+                            File.Delete(filePath);
+                            if (!File.Exists(filePath))
+                            {
+                                Console.WriteLine("File deleted...");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("File test.txt does not yet exist!");
+                        }
                         freeMemory();
                     }
                     else

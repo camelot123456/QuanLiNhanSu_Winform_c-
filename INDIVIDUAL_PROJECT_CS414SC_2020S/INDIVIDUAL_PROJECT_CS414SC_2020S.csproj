@@ -214,15 +214,16 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="img\avatar\account\1.png" />
-    <Content Include="img\avatar\account\a.jpg" />
+    <Content Include="img\avatar\account\an1629037027.png" />
     <Content Include="img\avatar\account\Anonymous.png" />
-    <Content Include="img\avatar\account\Jery_avatar.png" />
-    <Content Include="img\avatar\staff\a.jpg" />
+    <Content Include="img\avatar\account\long1629036848.png" />
+    <Content Include="img\avatar\account\ly1629037124.png" />
+    <Content Include="img\avatar\staff\1629037168.png" />
+    <Content Include="img\avatar\staff\1629037179.png" />
+    <Content Include="img\avatar\staff\1629037190.png" />
+    <Content Include="img\avatar\staff\1629037251.png" />
     <Content Include="img\avatar\staff\Anonymous.png" />
-    <Content Include="img\avatar\staff\B.jpg" />
-    <Content Include="img\avatar\staff\Bao_avatar.jpg" />
-    <Content Include="img\avatar\staff\s.jpg" />
+    <Content Include="img\avatar\staff\d1629037353.png" />
     <Content Include="img\icon_system\logout-icon.png" />
     <Content Include="img\icon_system\modify-key-icon %281%29.png" />
     <Content Include="img\icon_system\modify-key-icon.png" />

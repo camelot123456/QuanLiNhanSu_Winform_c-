@@ -35,9 +35,15 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
             return dao.queryForList(sql);
         }
 
-        public DataTable findRole()
+        public DataTable findRoleNotDefault()
         {
             string sql = "SELECT DISTINCT ROLECODE FROM [ROLE] WHERE USERNAME NOT IN ('CEO', 'HR', 'PR')";
+            return dao.queryForList(sql);
+        }
+
+        public DataTable findRole()
+        {
+            string sql = "SELECT DISTINCT ROLECODE FROM [ROLE]";
             return dao.queryForList(sql);
         }
 

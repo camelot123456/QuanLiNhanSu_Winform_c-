@@ -16,6 +16,12 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
             dao = new AbstractDAO();
         }
 
+        public DataTable findNotDefault()
+        {
+            string sql = "SELECT * FROM [USER]";
+            return dao.queryForList(sql);
+        }
+
         public DataTable find()
         {
             string sql = "SELECT * FROM [USER] WHERE USERNAME NOT IN ('CEO', 'HR', 'PR')";

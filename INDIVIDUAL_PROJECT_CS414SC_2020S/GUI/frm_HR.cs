@@ -67,7 +67,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
             SystemConstant.STAFF_MEMORY = new models.NhanVien();
             SystemConstant.STAFF_MEMORY.Msnv = dataGridView1.CurrentRow.Cells["MANV"].Value.ToString();
             txt_name.Text = dataGridView1.CurrentRow.Cells["TENNV"].Value.ToString();  // hoặc .Cells[0]  //[chỉ mục]
-            txt_img.Text = dataGridView1.CurrentRow.Cells["AVATAR"].Value.ToString();  //   .Cells[1]
+            SystemConstant.STAFF_MEMORY.Avatar = dataGridView1.CurrentRow.Cells["AVATAR"].Value.ToString();  //   .Cells[1]
             dtp_dob.Text = dataGridView1.CurrentRow.Cells["NGAYVAOLAM"].Value.ToString();
             cb_gender.Text = dataGridView1.CurrentRow.Cells["GIOITINH"].Value.ToString();      //.Cells[3] 
             cb_department.Text = dataGridView1.CurrentRow.Cells["PHONGBAN"].Value.ToString();
