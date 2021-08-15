@@ -189,6 +189,7 @@
             // 
             this.pb_img.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pb_img.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pb_img.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_img.Location = new System.Drawing.Point(565, 44);
             this.pb_img.Name = "pb_img";
             this.pb_img.Size = new System.Drawing.Size(164, 185);

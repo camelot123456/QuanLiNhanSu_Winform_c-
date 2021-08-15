@@ -163,7 +163,7 @@
             this.txt_avatar.Location = new System.Drawing.Point(723, 190);
             this.txt_avatar.Multiline = true;
             this.txt_avatar.Name = "txt_avatar";
-            this.txt_avatar.Size = new System.Drawing.Size(266, 221);
+            this.txt_avatar.Size = new System.Drawing.Size(266, 184);
             this.txt_avatar.TabIndex = 108;
             // 
             // txt_fullname

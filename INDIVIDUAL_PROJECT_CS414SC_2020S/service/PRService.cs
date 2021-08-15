@@ -28,6 +28,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             _PR.lbl_maluong_full.Text = "Kích đúp hàng cần sửa hoặc xóa";
             _PR.lbl_maluong_part.Text = "Kích đúp hàng cần sửa hoặc xóa";
         }
+        
 
         public void handlerUploadImg()
         {
@@ -64,6 +65,18 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             _PR.dataGridView_part.DataSource = pRRepository.getLuongByTypeJobIsParttime();
         }
 
+        public double getThanhLuongFull(double lcb, double hsl, double l1n, double sn, double lt)
+        {
+            if (lcb > 28)
+            {
+                return lcb * hsl + (l1n * sn) + lt;
+            }
+            else
+            {
+                return lcb * hsl + (l1n * sn);
+            }
+        }
+
         public void handlerBtnAddFull()
         {
             try
@@ -75,6 +88,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                         Convert.ToDouble(_PR.txt_luong1ngay.Text),
                         Convert.ToDouble(_PR.txt_songay.Text),
                         Convert.ToDouble(_PR.txt_luongThuong_full.Text),
+                        getThanhLuongFull(Convert.ToDouble(_PR.txt_luongcb.Text), Convert.ToDouble(_PR.txt_hesl.Text), Convert.ToDouble(_PR.txt_luong1ngay.Text), Convert.ToDouble(_PR.txt_songay.Text), Convert.ToDouble(_PR.txt_luongThuong_full.Text)),
                         Convert.ToInt32(_PR.cb_nhanvien_full.SelectedValue.ToString())
                     );
                 if (k == 0)
@@ -103,6 +117,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                         Convert.ToDouble(_PR.txt_luong1ngay.Text),
                         Convert.ToDouble(_PR.txt_songay.Text),
                         Convert.ToDouble(_PR.txt_luongThuong_full.Text),
+                        getThanhLuongFull(Convert.ToDouble(_PR.txt_luongcb.Text), Convert.ToDouble(_PR.txt_hesl.Text), Convert.ToDouble(_PR.txt_luong1ngay.Text), Convert.ToDouble(_PR.txt_songay.Text), Convert.ToDouble(_PR.txt_luongThuong_full.Text)),
                         _PR.lbl_maluong_full.Text
                     );
                 if (k == 0)
@@ -121,6 +136,18 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             }
         }
 
+        public double getThanhLuongPart(double l1g, double sn, double sg, double lt)
+        {
+            if ((sg*sn) > 210)
+            {
+                return ((l1g * sg) * sn) + lt;
+            }
+            else
+            {
+                return (l1g * sg) * sn;
+            }
+        }
+
         public void handlerBtnAddPart()
         {
             try
@@ -131,6 +158,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                         Convert.ToDouble(_PR.txt_songay_part.Text),
                         Convert.ToDouble(_PR.txt_sogio.Text),
                         Convert.ToDouble(_PR.txt_luongThuong_part.Text),
+                        getThanhLuongPart(Convert.ToDouble(_PR.txt_luong1gio.Text), Convert.ToDouble(_PR.txt_songay_part.Text), Convert.ToDouble(_PR.txt_sogio.Text), Convert.ToDouble(_PR.txt_luongThuong_part.Text)),
                         Convert.ToInt32(_PR.cb_nhanvien_part.SelectedValue.ToString())
                     );
                 if (k == 0)
@@ -158,6 +186,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                         Convert.ToDouble(_PR.txt_songay_part.Text),
                         Convert.ToDouble(_PR.txt_sogio.Text),
                         Convert.ToDouble(_PR.txt_luongThuong_part.Text),
+                        getThanhLuongPart(Convert.ToDouble(_PR.txt_luong1gio.Text), Convert.ToDouble(_PR.txt_songay_part.Text), Convert.ToDouble(_PR.txt_sogio.Text), Convert.ToDouble(_PR.txt_luongThuong_part.Text)),
                         _PR.lbl_maluong_part.Text
                     );
                 if (k == 0)

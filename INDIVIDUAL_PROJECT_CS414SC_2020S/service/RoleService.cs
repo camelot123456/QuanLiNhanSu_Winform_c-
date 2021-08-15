@@ -43,50 +43,73 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 
         public void handlerBtnAdd()
         {
-            int k = roleRepository.save(_AccList.cb_username.Text, _AccList.cb_roleCode.Text);
-            if (k == 0)
+            try
             {
-                MessageBox.Show("Thêm thất bại");
+                int k = roleRepository.save(_AccList.cb_username.Text, _AccList.cb_roleCode.Text);
+                if (k == 0)
+                {
+                    MessageBox.Show("Thêm thất bại");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thành công");
+                }
             }
-            else
+            catch (Exception e)
             {
-                MessageBox.Show("Thêm thành công");
+
+                MessageBox.Show(e.Message);
             }
         }
 
         public void handlerBtnUpdate()
         {
-            int k = roleRepository.updateOneRoleCodedById(_AccList.cb_roleCode.Text, SystemConstant.ROLE_MEMORY.Id);
-            if (k == 0)
+            try
             {
-                MessageBox.Show("Cập nhập thất bại");
+                int k = roleRepository.updateOneRoleCodedById(_AccList.cb_roleCode.Text, _AccList.lbl_maQuyen.Text);
+                if (k == 0)
+                {
+                    MessageBox.Show("Cập nhập thất bại");
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhập thành công");
+                    freeMemory();
+                }
             }
-            else
+            catch (Exception e)
             {
-                MessageBox.Show("Cập nhập thành công");
-                freeMemory();
+
+                MessageBox.Show(e.Message);
             }
         }
 
         public void handlerBtnDelete()
         {
-            DialogResult d = MessageBox.Show("Bạn có muốn xóa không ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (d == DialogResult.Yes)
+            try
             {
-                int k = roleRepository.deleteOne(SystemConstant.ROLE_MEMORY.Id);
-                if (k == 0)
+                DialogResult d = MessageBox.Show("Bạn có muốn xóa không ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (d == DialogResult.Yes)
                 {
-                    MessageBox.Show("Xóa thất bại");
+                    int k = roleRepository.deleteOne(_AccList.lbl_maQuyen.Text);
+                    if (k == 0)
+                    {
+                        MessageBox.Show("Xóa thất bại");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa thành công");
+                        freeMemory();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Xóa thành công");
-                    freeMemory();
+                    return;
                 }
             }
-            else
+            catch (Exception e)
             {
-                return;
+                MessageBox.Show(e.Message);
             }
         }
 

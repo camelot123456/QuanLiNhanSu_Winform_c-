@@ -34,9 +34,9 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
             return dao.executeUpdate(sql);
         }
 
-        public int save(string fullname, string username, string password)
+        public int save(string fullname, string username, string avatar ,string password)
         {
-            string sql = "INSERT INTO [USER](FULLNAME, USERNAME, [PASSWORD]) VALUES(N'" + fullname + "', N'" + username + "', N'" + password + "')";
+            string sql = "INSERT INTO [USER] VALUES(N'" + fullname + "', N'"+avatar+"', N'" + username + "', N'" + password + "')";
             return dao.executeUpdate(sql);
         }
 
@@ -45,5 +45,12 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
             string sql = "UPDATE [USER] SET FULLNAME = N'" + fullname + "', AVATAR = N'" + avatar + "' WHERE USERNAME = '" + username + "'";
             return dao.executeUpdate(sql);
         }
+        
+        public int deleteOneById(string id)
+        {
+            string sql = "DELETE FROM [USER] WHERE IDUSER = " + id;
+            return dao.executeUpdate(sql);
+        }
+
     }
 }

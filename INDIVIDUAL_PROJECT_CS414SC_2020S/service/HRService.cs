@@ -49,9 +49,9 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             //_HR.dtp_dob.Format("yyyy-MM-dd")
             try
             {
-                string path = SystemConstant.PATH_BASE_STAFF + _HR.txt_img.Text;
+                string path = SystemConstant.PATH_BASE_STAFF + _HR.txt_img.Text + ".png";
                 _HR.pb_img.Image.Save(path);
-                int k = hRRepository.save(_HR.txt_name.Text, _HR.txt_img.Text, DateTime.Parse(_HR.dtp_dob.Text), genderToBool(_HR.cb_gender.Text), _HR.cb_department.Text, _HR.cb_typeJob.Text);
+                int k = hRRepository.save(_HR.txt_name.Text, _HR.txt_img.Text + ".png", DateTime.Parse(_HR.dtp_dob.Text), genderToBool(_HR.cb_gender.Text), _HR.cb_department.Text, _HR.cb_typeJob.Text);
                 if (k == 0)
                 {
                     MessageBox.Show("Thêm thất bại");
@@ -71,9 +71,9 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
         {
             try
             {
-                string path = SystemConstant.PATH_BASE_STAFF + _HR.txt_img.Text;
+                string path = SystemConstant.PATH_BASE_STAFF + _HR.txt_img.Text + ".png";
                 _HR.pb_img.Image.Save(path);
-                int k = hRRepository.updateOne(_HR.txt_name.Text, _HR.txt_img.Text, DateTime.Parse(_HR.dtp_dob.Text), genderToBool(_HR.cb_gender.Text), _HR.cb_department.Text, _HR.cb_typeJob.Text, _HR.lbl_manv.Text);
+                int k = hRRepository.updateOne(_HR.txt_name.Text, _HR.txt_img.Text + ".png", DateTime.Parse(_HR.dtp_dob.Text), genderToBool(_HR.cb_gender.Text), _HR.cb_department.Text, _HR.cb_typeJob.Text, _HR.lbl_manv.Text);
                 if (k == 0)
                 {
                     MessageBox.Show("Cập nhập thất bại");

@@ -42,42 +42,58 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 
         public void updateOneFullnameAndAvatarByUsername()
         {
-            DialogResult d = MessageBox.Show("Bạn có muốn cập nhập thông tin ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (d == DialogResult.Yes)
+            try
             {
-                _MyAcc.pb_avatar.Image.Save(SystemConstant.PATH_BASE_ACCOUNT + _MyAcc.txt_avatar.Text);
-                userRepository.updateOneFullnameAndAvatarByUsername
-                (
-                    _MyAcc.txt_fullname.Text,
-                    _MyAcc.txt_avatar.Text,
-                    SystemConstant.USER_MEMORY.Username
-                );
-                MessageBox.Show("Cập nhập thông tin thành công\n");
+                DialogResult d = MessageBox.Show("Bạn có muốn cập nhập thông tin ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (d == DialogResult.Yes)
+                {
+                    _MyAcc.pb_avatar.Image.Save(SystemConstant.PATH_BASE_ACCOUNT + _MyAcc.txt_avatar.Text + ".png");
+                    userRepository.updateOneFullnameAndAvatarByUsername
+                    (
+                        _MyAcc.txt_fullname.Text,
+                        _MyAcc.txt_avatar.Text + ".png",
+                        SystemConstant.USER_MEMORY.Username
+                    );
+                    MessageBox.Show("Cập nhập thông tin thành công\nSẽ có hiệu lực sau lần đăng nhập tiếp theo");
+                }
+                else return;
             }
-            else return;
+            catch (Exception e)
+            {
+
+                MessageBox.Show(e.Message);
+            }
         }
 
         public void validateChangePass()
         {
-            if (!_changePass.txt_pass_old.Text.Equals("") && !_changePass.txt_pass_new.Text.Equals("") && !_changePass.txt_pass_check.Text.Equals(""))
+            try
             {
-                if (is_passNewChange && is_passOldChange)
+                if (!_changePass.txt_pass_old.Text.Equals("") && !_changePass.txt_pass_new.Text.Equals("") && !_changePass.txt_pass_check.Text.Equals(""))
                 {
-                    try
+                    if (is_passNewChange && is_passOldChange)
                     {
-                        userRepository.updateOnePasswordByUsername(_changePass.txt_pass_check.Text, SystemConstant.USER_MEMORY.Username);
-                        MessageBox.Show("Đổi mật khẩu thành công\nSẽ có hiệu lực sau lần đăng nhập tiếp theo");
-                        _changePass.Close();
-                    }
-                    catch (Exception e)
-                    {
-                        MessageBox.Show(e.Message);
+                        try
+                        {
+                            userRepository.updateOnePasswordByUsername(_changePass.txt_pass_check.Text, SystemConstant.USER_MEMORY.Username);
+                            MessageBox.Show("Đổi mật khẩu thành công\nSẽ có hiệu lực sau lần đăng nhập tiếp theo");
+                            _changePass.Close();
+                        }
+                        catch (Exception e)
+                        {
+                            MessageBox.Show(e.Message);
+                        }
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Yêu cầu nhập đầy đủ thông tin!");
+                }
             }
-            else
+            catch (Exception e)
             {
-                MessageBox.Show("Yêu cầu nhập đầy đủ thông tin!");
+
+                MessageBox.Show(e.Message);
             }
         }
 
@@ -116,30 +132,40 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 
         public void handlerAddAccount()
         {
-            if (!_CreateAccount.txt_username.Text.Equals("") && !_CreateAccount.txt_pass.Text.Equals("") && !_CreateAccount.txt_validatePass.Text.Equals("") && !_CreateAccount.txt_fullname.Text.Equals(""))
+            try
             {
-                if (is_password && is_username)
+                if (!_CreateAccount.txt_username.Text.Equals("") && !_CreateAccount.txt_pass.Text.Equals("") && !_CreateAccount.txt_validatePass.Text.Equals("") && !_CreateAccount.txt_fullname.Text.Equals(""))
                 {
-                    try
+                    if (is_password && is_username)
                     {
-                        userRepository.save
-                    (
-                        _CreateAccount.txt_fullname.Text,
-                        _CreateAccount.txt_username.Text,
-                        _CreateAccount.txt_validatePass.Text
-                    );
+                        try
+                        {
+                            string path = SystemConstant.PATH_BASE_ACCOUNT + _CreateAccount.txt_tenAnh.Text + ".png";
+                            _CreateAccount.pb_avatar.Image.Save(path);
+                            userRepository.save
+                        (
+                            _CreateAccount.txt_fullname.Text,
+                            _CreateAccount.txt_username.Text,
+                            _CreateAccount.txt_tenAnh.Text + ".png",
+                            _CreateAccount.txt_validatePass.Text
+                        );
 
-                        MessageBox.Show("Thêm tài khoản mới thành công");
-                    }
-                    catch (Exception e)
-                    {
-                        MessageBox.Show(e.Message);
+                            MessageBox.Show("Thêm tài khoản mới thành công");
+                        }
+                        catch (Exception e)
+                        {
+                            MessageBox.Show(e.Message);
+                        }
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Yêu cầu nhập đầy đủ thông tin!");
+                }
             }
-            else
+            catch (Exception e)
             {
-                MessageBox.Show("Yêu cầu nhập đầy đủ thông tin!");
+                MessageBox.Show(e.Message);
             }
         }
 
@@ -192,6 +218,50 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 _MyAcc.pb_avatar.Image = Image.FromFile(OFD.FileName);
                 _MyAcc.pb_avatar.SizeMode = PictureBoxSizeMode.StretchImage;
             }
+        }
+
+
+        public void loadDataAccDel()
+        {
+            _CreateAccount.dataGridView_del.DataSource = userRepository.find();
+        }
+
+        public void handlerBtnDelete()
+        {
+            try
+            {
+                int k = 0;
+                DialogResult d = MessageBox.Show("Bạn có muốn xóa không ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (d == DialogResult.Yes)
+                {
+                    k = userRepository.deleteOneById(_CreateAccount.lbl_maTK_del.Text);
+                    if (k > 0)
+                    {
+                        MessageBox.Show("Xóa thành công");
+                        freeMemory();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa thất bại");
+                        
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        public void freeMemory()
+        {
+            SystemConstant.USER_MEMORY = null;
+            _CreateAccount.lbl_maTK_del.Text = "Kích đúp hàng cần xóa";
+            _CreateAccount.lbl_username_del.Text = "Kích đúp hàng cần xóa";
         }
     }
 }

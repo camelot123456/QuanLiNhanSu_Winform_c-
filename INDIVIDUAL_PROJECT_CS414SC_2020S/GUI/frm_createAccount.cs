@@ -1,4 +1,5 @@
-﻿using INDIVIDUAL_PROJECT_CS414SC_2020S.service;
+﻿using INDIVIDUAL_PROJECT_CS414SC_2020S.models;
+using INDIVIDUAL_PROJECT_CS414SC_2020S.service;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
         private void btn_add_Click(object sender, EventArgs e)
         {
             userService.handlerAddAccount();
+
         }
 
         private void txt_username_Validated(object sender, EventArgs e)
@@ -54,6 +56,35 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
             txt_pass.Text = "";
             txt_username.Text = "";
             txt_validatePass.Text = "";
+            txt_tenAnh.Text = "";
+        }
+
+        private void btn_del_Click(object sender, EventArgs e)
+        {
+            userService.handlerBtnDelete();
+            userService.loadDataAccDel();
+        }
+
+        private void btn_free_part_Click(object sender, EventArgs e)
+        {
+            userService.freeMemory();
+        }
+
+        private void dataGridView_del_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SystemConstant.USER_MEMORY = new User();
+            SystemConstant.USER_MEMORY.Id = dataGridView_del.CurrentRow.Cells["IDUSER"].Value.ToString();
+            SystemConstant.USER_MEMORY.Username = dataGridView_del.CurrentRow.Cells["USERNAME"].Value.ToString();
+            SystemConstant.USER_MEMORY.Avatar = dataGridView_del.CurrentRow.Cells["AVATAR"].Value.ToString();
+            lbl_maTK_del.Text = SystemConstant.USER_MEMORY.Id;
+            lbl_username_del.Text = SystemConstant.USER_MEMORY.Username;
+            pb_img_del.ImageLocation = SystemConstant.PATH_BASE_ACCOUNT + dataGridView_del.CurrentRow.Cells["AVATAR"].Value.ToString();
+            pb_img_del.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void frm_createAccount_Load(object sender, EventArgs e)
+        {
+            userService.loadDataAccDel();
         }
     }
 }

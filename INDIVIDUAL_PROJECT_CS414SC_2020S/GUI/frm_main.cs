@@ -62,7 +62,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S
 
         private void btn_help_Click(object sender, EventArgs e)
         {
-            homeService.openChildForms(new frm_dashboard());
+            homeService.openChildForms(new frm_help());
         }
 
         private void btn_login_Click(object sender, EventArgs e)

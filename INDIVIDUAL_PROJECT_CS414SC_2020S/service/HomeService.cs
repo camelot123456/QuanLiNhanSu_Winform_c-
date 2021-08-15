@@ -183,7 +183,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 
         {
             _Main.lbl_title.Text = "HOME";
-            _Main.btnCloseChild.Visible = false;
+            openChildForms(new frm_home());
         }
 
         public void handerExitApp()
