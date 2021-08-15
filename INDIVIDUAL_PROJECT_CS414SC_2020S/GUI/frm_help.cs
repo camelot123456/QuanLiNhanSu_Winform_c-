@@ -28,9 +28,10 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
                 "   để sử dụng chức năng quản lý lương thì cần phải tạo nhân viên bên quản lý nhân sự trước\n" +
                 "   Để sử dụng chức năng thêm quyền cho account, cần phải tạo account mới trước\n\n" +
                 "   Lưu ý:" +
-                "   +Sau khi tạo mới account thì account đó vẫn chưa thể sử dụng các chức năng chính trong hệ thống đc, \n" +
-                "   để sử dụng các chức năng chính cần sử dụng 1 account có quyền CEO hoặc MANAGER_HR sau đó vào quản lý quyền rồi thêm quyền cho\n" +
-                "   account vừa mới tạo là được" +
+                "       +Sau khi tạo mới account thì account đó vẫn chưa thể sử dụng các chức năng chính trong hệ thống đc, " +
+                "   để sử dụng các chức năng chính cần sử dụng 1 account có quyền CEO hoặc MANAGER_HR sau đó vào quản lý quyền rồi thêm quyền cho account vừa mới tạo là được" +
+                "       +trong hệ thống có nút nhấn 'Xóa id trong bộ nhớ': khi bạn kick dup hàng cần sửa hoặc xóa trong table thì id của hàng đó sẽ " +
+                "   lưu vào bộ nhớ tạm, nếu kick dup mà ko sửa hoặc xóa thì lúc này cần nhấn nút 'Xóa id trong bộ nhớ' để giải phóng bộ nhớ " +
                 "";
         }
     }

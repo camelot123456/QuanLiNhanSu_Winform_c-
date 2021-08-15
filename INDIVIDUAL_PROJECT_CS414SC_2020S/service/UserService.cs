@@ -53,9 +53,15 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                     (
                         _MyAcc.txt_fullname.Text,
                         _MyAcc.txt_avatar.Text + CODE_IMG + ".png",
-                        SystemConstant.USER_MEMORY.Username
+                        _MyAcc.lbl_account.Text
                     );
-                    MessageBox.Show("Cập nhập thông tin thành công\nSẽ có hiệu lực sau lần đăng nhập tiếp theo");
+                    MessageBox.Show("Cập nhập thông tin thành công\nChọn refresh bên cạnh ảnh đại diện để cập nhập");
+
+                    SystemConstant.USER_MEMORY = new models.User();
+                    SystemConstant.USER_MEMORY.Fullname = _MyAcc.txt_fullname.Text;
+                    SystemConstant.USER_MEMORY.Avatar = _MyAcc.txt_avatar.Text + CODE_IMG + ".png";
+                    SystemConstant.USER_MEMORY.Id = _MyAcc.lbl_id.Text;
+                    SystemConstant.IS_UPDATE_MY_ACCOUNT = true;
                 }
                 else return;
             }
@@ -76,7 +82,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                     {
                         try
                         {
-                            userRepository.updateOnePasswordByUsername(_changePass.txt_pass_check.Text, SystemConstant.USER_MEMORY.Username);
+                            userRepository.updateOnePasswordByIdUser(_changePass.txt_pass_check.Text, _changePass.lbl_id.Text);
                             MessageBox.Show("Đổi mật khẩu thành công\nSẽ có hiệu lực sau lần đăng nhập tiếp theo");
                             _changePass.Close();
                         }
@@ -100,7 +106,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 
         public void handlerValidatePassOld()
         {
-            if (!_changePass.txt_pass_old.Text.Equals(SystemConstant.USER_MEMORY.Password))
+            if (!_changePass.txt_pass_old.Text.Equals(SystemConstant.PASSWORD))
             {
                 _changePass.lbl_warnChangePass.Text = "Mật khẩu cũ không đúng";
                 is_passOldChange = false;

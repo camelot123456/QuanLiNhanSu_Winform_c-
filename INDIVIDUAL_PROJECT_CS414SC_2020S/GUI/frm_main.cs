@@ -89,5 +89,10 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S
         {
             homeService.handerOpenChildFormCreateAccount();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            homeService.handlerUpdateFormMyAccount();
+        }
     }
 }

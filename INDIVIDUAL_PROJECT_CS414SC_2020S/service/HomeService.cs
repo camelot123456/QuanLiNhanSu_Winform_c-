@@ -107,6 +107,23 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             else openChildForms(new frm_createAccount());
         }
 
+        public void handlerUpdateFormMyAccount()
+        {
+            if (SystemConstant.IS_UPDATE_MY_ACCOUNT)
+            {
+                _Main.lbl_fullname.Text = SystemConstant.USER_MEMORY.Fullname;
+                _Main.lbl_id.Text = SystemConstant.USER_MEMORY.Id;
+                _Main.pb_avatar.Image = Image.FromFile(SystemConstant.PATH_BASE_ACCOUNT + SystemConstant.USER_MEMORY.Avatar);
+                _Main.pb_avatar.SizeMode = PictureBoxSizeMode.StretchImage;
+                SystemConstant.USER_MEMORY = null;
+                SystemConstant.IS_UPDATE_MY_ACCOUNT = false;
+            }
+            else
+            {
+                return;
+            }
+        }
+
         public void handlerOpenChildFormPR()
         {
             bool k = false;
@@ -175,6 +192,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             if (activeForm != null)
             {
                 activeForm.Close();
+
             }
             Reset();
         }
@@ -184,6 +202,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
         {
             _Main.lbl_title.Text = "HOME";
             openChildForms(new frm_home());
+
         }
 
         public void handerExitApp()

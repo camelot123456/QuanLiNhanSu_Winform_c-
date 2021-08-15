@@ -37,7 +37,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
 
         public int genderToBool(string gender)
         {
-            if (gender.Equals("Nam"))
+            if (gender.Equals("Nam") || gender.Equals("True"))
             {
                 return 1;
             }

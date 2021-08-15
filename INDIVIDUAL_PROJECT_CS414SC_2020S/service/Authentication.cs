@@ -43,7 +43,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 SystemConstant.USER_MEMORY = new models.User();
                 SystemConstant.USER_MEMORY.Username = dt.Rows[0]["USERNAME"].ToString();
                 SystemConstant.USER_MEMORY.Fullname = dt.Rows[0]["FULLNAME"].ToString();
-                SystemConstant.USER_MEMORY.Password = dt.Rows[0]["PASSWORD"].ToString();
+                SystemConstant.PASSWORD = dt.Rows[0]["PASSWORD"].ToString();
                 SystemConstant.USER_MEMORY.Avatar = dt.Rows[0]["AVATAR"].ToString();
                 SystemConstant.USER_MEMORY.Id = dt.Rows[0]["IDUSER"].ToString();
                 dt = roleRepository.findRoleCodeByUsername(SystemConstant.USER_MEMORY.Username);

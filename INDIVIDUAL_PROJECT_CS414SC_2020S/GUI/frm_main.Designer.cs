@@ -45,6 +45,7 @@
             this.btnCloseChild = new System.Windows.Forms.Button();
             this.lbl_title = new System.Windows.Forms.Label();
             this.panelDesktopMain = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -201,6 +202,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.lbl_id);
             this.panel2.Controls.Add(this.lbl_fullname);
             this.panel2.Location = new System.Drawing.Point(99, 12);
@@ -213,7 +215,7 @@
             this.lbl_id.AutoSize = true;
             this.lbl_id.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_id.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_id.Location = new System.Drawing.Point(3, 41);
+            this.lbl_id.Location = new System.Drawing.Point(3, 32);
             this.lbl_id.Name = "lbl_id";
             this.lbl_id.Size = new System.Drawing.Size(38, 13);
             this.lbl_id.TabIndex = 0;
@@ -224,7 +226,7 @@
             this.lbl_fullname.AutoSize = true;
             this.lbl_fullname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_fullname.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_fullname.Location = new System.Drawing.Point(3, 10);
+            this.lbl_fullname.Location = new System.Drawing.Point(3, 0);
             this.lbl_fullname.Name = "lbl_fullname";
             this.lbl_fullname.Size = new System.Drawing.Size(38, 13);
             this.lbl_fullname.TabIndex = 0;
@@ -295,6 +297,19 @@
             this.panelDesktopMain.Size = new System.Drawing.Size(720, 461);
             this.panelDesktopMain.TabIndex = 3;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(3, 63);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(44, 13);
+            this.linkLabel1.TabIndex = 0;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Refresh";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,5 +352,6 @@
         public System.Windows.Forms.Label lbl_id;
         public System.Windows.Forms.Button btn_help;
         public System.Windows.Forms.Button btn_logout;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

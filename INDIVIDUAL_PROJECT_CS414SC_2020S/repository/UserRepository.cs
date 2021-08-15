@@ -28,9 +28,9 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
             return dao.queryForList(sql);
         }
 
-        public int updateOnePasswordByUsername(string password, string username)
+        public int updateOnePasswordByIdUser(string password, string id)
         {
-            string sql = "UPDATE [USER] SET [PASSWORD] = '" + password + "' WHERE USERNAME = '" + username + "'";
+            string sql = "UPDATE [USER] SET [PASSWORD] = '" + password + "' WHERE IDUSER = '" + id + "'";
             return dao.executeUpdate(sql);
         }
 

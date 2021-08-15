@@ -20,7 +20,6 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
             userService = new UserService(this);
             InitializeComponent();
             txt_fullname.Text = SystemConstant.USER_MEMORY.Fullname;
-            txt_avatar.Text = SystemConstant.USER_MEMORY.Avatar;
             lbl_id.Text = SystemConstant.USER_MEMORY.Id;
             lbl_account.Text = SystemConstant.USER_MEMORY.Username;
             pb_avatar.Image = Image.FromFile(SystemConstant.PATH_BASE_ACCOUNT + SystemConstant.USER_MEMORY.Avatar);
@@ -34,7 +33,9 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
 
         private void btn_changePass_Click(object sender, EventArgs e)
         {
-            new frm_changePass().Show();
+            frm_changePass _ChangePass = new frm_changePass();
+            _ChangePass.lbl_id.Text = lbl_id.Text;
+            _ChangePass.Show();
         }
 
         private void btn_save_Click(object sender, EventArgs e)
