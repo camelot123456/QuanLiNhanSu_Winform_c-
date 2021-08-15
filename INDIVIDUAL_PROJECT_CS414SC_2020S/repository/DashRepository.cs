@@ -37,22 +37,22 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.repository
 
 
 
-        public object getTotalByGender(int gender)
+        public DataTable getTotalByGender(int gender)
         {
-            string sql = "SELECT SUM(L.THANHLUONG) FROM LUONG L, NHANVIEN N WHERE L.MANV = N.MANV AND N.GIOITINH = " + gender;
-            return dao.scalar(sql);
+            string sql = "SELECT * FROM LUONG L, NHANVIEN N WHERE L.MANV = N.MANV AND N.GIOITINH = " + gender;
+            return dao.queryForList(sql);
         }
 
-        public object getTotalByDepartment(string department)
+        public DataTable getTotalByDepartment(string department)
         {
-            string sql = "SELECT SUM(L.THANHLUONG) FROM LUONG L, NHANVIEN N WHERE L.MANV = N.MANV AND PHONGBAN = N'" + department + "'";
-            return dao.scalar(sql);
+            string sql = "SELECT * FROM LUONG L, NHANVIEN N WHERE L.MANV = N.MANV AND PHONGBAN = N'" + department + "'";
+            return dao.queryForList(sql);
         }
 
-        public object getTotalByType(string type)
+        public DataTable getTotalByType(string type)
         {
-            string sql = "SELECT SUM(L.THANHLUONG) FROM LUONG L, NHANVIEN N WHERE L.MANV = N.MANV AND LOAICONGVIEC = N'" + type + "'";
-            return dao.scalar(sql);
+            string sql = "SELECT * FROM LUONG L, NHANVIEN N WHERE L.MANV = N.MANV AND LOAICONGVIEC = N'" + type + "'";
+            return dao.queryForList(sql);
         }
 
         public object countSLNhanVien()

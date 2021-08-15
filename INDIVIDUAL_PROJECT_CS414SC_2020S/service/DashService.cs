@@ -23,14 +23,14 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
         }
         public void loadData()
         {
-            _Dashboard.chart_gioiTinh.Series["Payroll"].Points.AddXY("Nam", (double)dashRepository.getTotalByGender(1));
-            _Dashboard.chart_gioiTinh.Series["Payroll"].Points.AddXY("Nữ", (double)dashRepository.getTotalByGender(0));
+            _Dashboard.chart_gioiTinh.Series["Payroll"].Points.AddXY("Nam", getTotalByGender(1));
+            _Dashboard.chart_gioiTinh.Series["Payroll"].Points.AddXY("Nữ", getTotalByGender(0));
 
-            _Dashboard.chart_PhongBan.Series["Payroll"].Points.AddXY("Kế toán", (double)dashRepository.getTotalByDepartment("Kế toán"));
-            _Dashboard.chart_PhongBan.Series["Payroll"].Points.AddXY("Nhân sự", (double)dashRepository.getTotalByDepartment("Nhân sự"));
+            _Dashboard.chart_PhongBan.Series["Payroll"].Points.AddXY("Kế toán", getTotalByDepartment("Kế toán"));
+            _Dashboard.chart_PhongBan.Series["Payroll"].Points.AddXY("Nhân sự", getTotalByDepartment("Nhân sự"));
 
-            _Dashboard.chart_LoaiViec.Series["Payroll"].Points.AddXY("Full-time", (double)dashRepository.getTotalByType("Fulltime"));
-            _Dashboard.chart_LoaiViec.Series["Payroll"].Points.AddXY("Part-time", (double)dashRepository.getTotalByType("Parttime"));
+            _Dashboard.chart_LoaiViec.Series["Payroll"].Points.AddXY("Full-time", getTotalByType("Fulltime"));
+            _Dashboard.chart_LoaiViec.Series["Payroll"].Points.AddXY("Part-time", getTotalByType("Parttime"));
 
             _Dashboard.Pie_gioiTinh.Series["Payroll"].Points.AddXY("Nam", (int)dashRepository.getCountByGender(1));
             _Dashboard.Pie_gioiTinh.Series["Payroll"].Points.AddXY("Nữ", (int)dashRepository.getCountByGender(0));
@@ -45,5 +45,37 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             _Dashboard.lbl_tongLuong.Text = dashRepository.countLNhanVien().ToString() + " VNĐ";
         }
 
+        public double getTotalByGender(int gender)
+        {
+            double tong = 0;
+
+            foreach (DataRow row in dashRepository.getTotalByGender(gender).Rows)
+            {
+                tong += Convert.ToDouble(row["THANHLUONG"].ToString());
+            }
+            return tong;
+        }
+
+        public double getTotalByDepartment(string department)
+        {
+            double tong = 0;
+
+            foreach (DataRow row in dashRepository.getTotalByDepartment(department).Rows)
+            {
+                tong += Convert.ToDouble(row["THANHLUONG"].ToString());
+            }
+            return tong;
+        }
+
+        public double getTotalByType(string type)
+        {
+            double tong = 0;
+
+            foreach (DataRow row in dashRepository.getTotalByType(type).Rows)
+            {
+                tong += Convert.ToDouble(row["THANHLUONG"].ToString());
+            }
+            return tong;
+        }
     }
 }

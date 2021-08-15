@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btn_logout = new System.Windows.Forms.Button();
             this.btn_help = new System.Windows.Forms.Button();
             this.btn_createdAcc = new System.Windows.Forms.Button();
             this.btn_role = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@
             this.btnCloseChild = new System.Windows.Forms.Button();
             this.lbl_title = new System.Windows.Forms.Label();
             this.panelDesktopMain = new System.Windows.Forms.Panel();
-            this.btn_logout = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -68,6 +68,23 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(301, 561);
             this.panelMenu.TabIndex = 1;
+            // 
+            // btn_logout
+            // 
+            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_logout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_logout.FlatAppearance.BorderSize = 0;
+            this.btn_logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_logout.Location = new System.Drawing.Point(0, 520);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(301, 70);
+            this.btn_logout.TabIndex = 10;
+            this.btn_logout.Text = "Đăng xuất";
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // btn_help
             // 
@@ -254,7 +271,9 @@
             // 
             // lbl_title
             // 
-            this.lbl_title.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_title.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_title.AutoSize = true;
             this.lbl_title.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_title.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -267,29 +286,14 @@
             // 
             // panelDesktopMain
             // 
+            this.panelDesktopMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDesktopMain.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panelDesktopMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktopMain.Location = new System.Drawing.Point(301, 100);
             this.panelDesktopMain.Name = "panelDesktopMain";
             this.panelDesktopMain.Size = new System.Drawing.Size(720, 461);
             this.panelDesktopMain.TabIndex = 3;
-            // 
-            // btn_logout
-            // 
-            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_logout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_logout.FlatAppearance.BorderSize = 0;
-            this.btn_logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(111)))), ((int)(((byte)(28)))));
-            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logout.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logout.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_logout.Location = new System.Drawing.Point(0, 520);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(301, 70);
-            this.btn_logout.TabIndex = 10;
-            this.btn_logout.Text = "Đăng xuất";
-            this.btn_logout.UseVisualStyleBackColor = true;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // frm_main
             // 

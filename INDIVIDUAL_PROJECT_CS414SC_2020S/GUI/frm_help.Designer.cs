@@ -50,7 +50,7 @@
             this.ClientSize = new System.Drawing.Size(1066, 645);
             this.Controls.Add(this.richTextBox1);
             this.Name = "frm_help";
-            this.Text = "frm_help";
+            this.Text = "Trợ giúp";
             this.ResumeLayout(false);
 
         }

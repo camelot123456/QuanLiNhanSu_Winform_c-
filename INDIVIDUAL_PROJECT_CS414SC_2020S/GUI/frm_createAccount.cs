@@ -25,7 +25,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.GUI
         private void btn_add_Click(object sender, EventArgs e)
         {
             userService.handlerAddAccount();
-
+            userService.loadDataAccDel();
         }
 
         private void txt_username_Validated(object sender, EventArgs e)

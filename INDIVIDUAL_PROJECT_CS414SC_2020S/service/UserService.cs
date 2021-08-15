@@ -47,11 +47,12 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                 DialogResult d = MessageBox.Show("Bạn có muốn cập nhập thông tin ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (d == DialogResult.Yes)
                 {
-                    _MyAcc.pb_avatar.Image.Save(SystemConstant.PATH_BASE_ACCOUNT + _MyAcc.txt_avatar.Text + ".png");
+                    Int32 CODE_IMG = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
+                    _MyAcc.pb_avatar.Image.Save(SystemConstant.PATH_BASE_ACCOUNT + _MyAcc.txt_avatar.Text + CODE_IMG + ".png");
                     userRepository.updateOneFullnameAndAvatarByUsername
                     (
                         _MyAcc.txt_fullname.Text,
-                        _MyAcc.txt_avatar.Text + ".png",
+                        _MyAcc.txt_avatar.Text + CODE_IMG + ".png",
                         SystemConstant.USER_MEMORY.Username
                     );
                     MessageBox.Show("Cập nhập thông tin thành công\nSẽ có hiệu lực sau lần đăng nhập tiếp theo");
@@ -140,13 +141,14 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
                     {
                         try
                         {
-                            string path = SystemConstant.PATH_BASE_ACCOUNT + _CreateAccount.txt_tenAnh.Text + ".png";
+                            Int32 CODE_IMG = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
+                            string path = SystemConstant.PATH_BASE_ACCOUNT + _CreateAccount.txt_tenAnh.Text + CODE_IMG + ".png";
                             _CreateAccount.pb_avatar.Image.Save(path);
                             userRepository.save
                         (
                             _CreateAccount.txt_fullname.Text,
                             _CreateAccount.txt_username.Text,
-                            _CreateAccount.txt_tenAnh.Text + ".png",
+                            _CreateAccount.txt_tenAnh.Text + CODE_IMG + ".png",
                             _CreateAccount.txt_validatePass.Text
                         );
 

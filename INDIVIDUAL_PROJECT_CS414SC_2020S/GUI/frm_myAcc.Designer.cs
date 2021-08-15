@@ -192,7 +192,7 @@
             this.Controls.Add(this.txt_avatar);
             this.Controls.Add(this.txt_fullname);
             this.Name = "frm_myAcc";
-            this.Text = "frm_myAcc";
+            this.Text = "Thông tin cá nhân";
             this.Load += new System.EventHandler(this.frm_myAcc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).EndInit();
             this.ResumeLayout(false);

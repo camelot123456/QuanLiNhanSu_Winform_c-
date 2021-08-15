@@ -82,7 +82,7 @@
             this.pie_loaiViec.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.pie_loaiViec.Legends.Add(legend1);
-            this.pie_loaiViec.Location = new System.Drawing.Point(-8, 511);
+            this.pie_loaiViec.Location = new System.Drawing.Point(39, 596);
             this.pie_loaiViec.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
             this.pie_loaiViec.Name = "pie_loaiViec";
             series1.ChartArea = "ChartArea1";
@@ -102,7 +102,7 @@
             this.pie_phongBan.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.pie_phongBan.Legends.Add(legend2);
-            this.pie_phongBan.Location = new System.Drawing.Point(435, 849);
+            this.pie_phongBan.Location = new System.Drawing.Point(482, 968);
             this.pie_phongBan.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
             this.pie_phongBan.Name = "pie_phongBan";
             series2.ChartArea = "ChartArea1";
@@ -122,7 +122,7 @@
             this.Pie_gioiTinh.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.Pie_gioiTinh.Legends.Add(legend3);
-            this.Pie_gioiTinh.Location = new System.Drawing.Point(435, 173);
+            this.Pie_gioiTinh.Location = new System.Drawing.Point(482, 225);
             this.Pie_gioiTinh.Name = "Pie_gioiTinh";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -141,7 +141,7 @@
             this.chart_PhongBan.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.chart_PhongBan.Legends.Add(legend4);
-            this.chart_PhongBan.Location = new System.Drawing.Point(-8, 849);
+            this.chart_PhongBan.Location = new System.Drawing.Point(39, 968);
             this.chart_PhongBan.Name = "chart_PhongBan";
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
@@ -160,7 +160,7 @@
             this.chart_LoaiViec.ChartAreas.Add(chartArea5);
             legend5.Name = "Legend1";
             this.chart_LoaiViec.Legends.Add(legend5);
-            this.chart_LoaiViec.Location = new System.Drawing.Point(435, 511);
+            this.chart_LoaiViec.Location = new System.Drawing.Point(482, 596);
             this.chart_LoaiViec.Name = "chart_LoaiViec";
             series5.ChartArea = "ChartArea1";
             series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
@@ -182,7 +182,7 @@
             legend6.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
             legend6.Name = "Legend1";
             this.chart_gioiTinh.Legends.Add(legend6);
-            this.chart_gioiTinh.Location = new System.Drawing.Point(-8, 173);
+            this.chart_gioiTinh.Location = new System.Drawing.Point(39, 225);
             this.chart_gioiTinh.Name = "chart_gioiTinh";
             series6.ChartArea = "ChartArea1";
             series6.Legend = "Legend1";
@@ -223,7 +223,7 @@
             this.panel2.Controls.Add(this.lbl_slnguoi);
             this.panel2.Controls.Add(this.label4);
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(115)))), ((int)(((byte)(18)))));
-            this.panel2.Location = new System.Drawing.Point(435, 10);
+            this.panel2.Location = new System.Drawing.Point(482, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(437, 157);
             this.panel2.TabIndex = 35;
@@ -259,7 +259,7 @@
             this.panel1.Controls.Add(this.lbl_tongLuong);
             this.panel1.Controls.Add(this.label1);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(115)))), ((int)(((byte)(18)))));
-            this.panel1.Location = new System.Drawing.Point(-8, 10);
+            this.panel1.Location = new System.Drawing.Point(39, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(437, 157);
             this.panel1.TabIndex = 34;
@@ -270,7 +270,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(105)))), ((int)(((byte)(8)))));
-            this.label2.Location = new System.Drawing.Point(29, 476);
+            this.label2.Location = new System.Drawing.Point(41, 190);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(337, 32);
             this.label2.TabIndex = 0;
@@ -282,7 +282,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(105)))), ((int)(((byte)(8)))));
-            this.label3.Location = new System.Drawing.Point(464, 476);
+            this.label3.Location = new System.Drawing.Point(476, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(368, 32);
             this.label3.TabIndex = 0;
@@ -294,7 +294,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(105)))), ((int)(((byte)(8)))));
-            this.label5.Location = new System.Drawing.Point(464, 814);
+            this.label5.Location = new System.Drawing.Point(476, 561);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(365, 32);
             this.label5.TabIndex = 0;
@@ -306,11 +306,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(105)))), ((int)(((byte)(8)))));
-            this.label6.Location = new System.Drawing.Point(29, 814);
+            this.label6.Location = new System.Drawing.Point(41, 561);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(365, 32);
+            this.label6.Size = new System.Drawing.Size(396, 32);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Thống kê lương theo phòng ban";
+            this.label6.Text = "Thống kê số lượng theo phòng ban";
             // 
             // label7
             // 
@@ -318,7 +318,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(105)))), ((int)(((byte)(8)))));
-            this.label7.Location = new System.Drawing.Point(29, 1153);
+            this.label7.Location = new System.Drawing.Point(41, 933);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(395, 32);
             this.label7.TabIndex = 0;
@@ -330,11 +330,11 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(105)))), ((int)(((byte)(8)))));
-            this.label8.Location = new System.Drawing.Point(464, 1153);
+            this.label8.Location = new System.Drawing.Point(476, 933);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(395, 32);
+            this.label8.Size = new System.Drawing.Size(426, 32);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Thống kê lương theo loại công việc";
+            this.label8.Text = "Thống kê số lượng theo loại công việc";
             // 
             // frm_dashboard
             // 
@@ -342,7 +342,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(913, 578);
+            this.ClientSize = new System.Drawing.Size(983, 578);
             this.Controls.Add(this.pie_loaiViec);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -359,7 +359,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frm_dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_dashboard";
+            this.Text = "Trình tổng thống kê";
             this.Load += new System.EventHandler(this.frm_dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pie_loaiViec)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pie_phongBan)).EndInit();

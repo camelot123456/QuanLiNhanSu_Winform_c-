@@ -38,7 +38,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Name = "frm_home";
-            this.Text = "frm_home";
+            this.Text = "Xin chào, chúc bạn sức khỏe, chúc bạn có 1 ngày làm việc hiệu quả";
             this.ResumeLayout(false);
 
         }

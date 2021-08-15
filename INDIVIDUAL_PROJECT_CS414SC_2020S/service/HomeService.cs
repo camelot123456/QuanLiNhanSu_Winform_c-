@@ -159,7 +159,7 @@ namespace INDIVIDUAL_PROJECT_CS414SC_2020S.service
             _Main.panelDesktopMain.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            _Main.lbl_title.Text = childForm.Text;
+            _Main.lbl_title.Text = childForm.Text.ToUpper();
             _Main.btnCloseChild.Visible = true;
         }
 

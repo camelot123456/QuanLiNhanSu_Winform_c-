@@ -356,7 +356,7 @@
             this.Controls.Add(this.label3);
             this.Name = "frm_HR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_HR";
+            this.Text = "Quản lý nhân sự";
             this.Load += new System.EventHandler(this.frm_HR_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img)).EndInit();

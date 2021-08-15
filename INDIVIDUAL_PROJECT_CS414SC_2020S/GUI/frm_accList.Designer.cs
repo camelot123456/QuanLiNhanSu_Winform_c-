@@ -256,7 +256,7 @@
             this.Controls.Add(this.dataGridView_roleList);
             this.Name = "frm_accList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_accList";
+            this.Text = "Quản lý quyền truy cập";
             this.Load += new System.EventHandler(this.frm_accList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_roleList)).EndInit();
             this.ResumeLayout(false);

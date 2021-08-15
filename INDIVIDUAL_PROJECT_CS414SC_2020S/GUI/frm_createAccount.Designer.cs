@@ -30,7 +30,6 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txt_validatePass = new System.Windows.Forms.TextBox();
             this.pb_avatar = new System.Windows.Forms.PictureBox();
             this.btn_save = new System.Windows.Forms.Button();
@@ -46,20 +45,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_fullname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pb_img_del = new System.Windows.Forms.PictureBox();
             this.btn_free_part = new System.Windows.Forms.Button();
+            this.lbl_username_del = new System.Windows.Forms.Label();
             this.lbl_maTK_del = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.Giơi = new System.Windows.Forms.Label();
             this.btn_del = new System.Windows.Forms.Button();
             this.dataGridView_del = new System.Windows.Forms.DataGridView();
-            this.lbl_username_del = new System.Windows.Forms.Label();
-            this.pb_img_del = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_del)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_del)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_del)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -99,25 +99,6 @@
             this.tabPage1.Text = "Tạo tài khoản";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.pb_img_del);
-            this.tabPage2.Controls.Add(this.btn_free_part);
-            this.tabPage2.Controls.Add(this.lbl_username_del);
-            this.tabPage2.Controls.Add(this.lbl_maTK_del);
-            this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.Giơi);
-            this.tabPage2.Controls.Add(this.btn_del);
-            this.tabPage2.Controls.Add(this.dataGridView_del);
-            this.tabPage2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1056, 552);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Xóa tài khoản";
-            // 
             // txt_validatePass
             // 
             this.txt_validatePass.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -127,6 +108,7 @@
             this.txt_validatePass.Size = new System.Drawing.Size(250, 27);
             this.txt_validatePass.TabIndex = 130;
             this.txt_validatePass.UseSystemPasswordChar = true;
+            this.txt_validatePass.Validated += new System.EventHandler(this.txt_validatePass_Validated);
             // 
             // pb_avatar
             // 
@@ -138,6 +120,7 @@
             this.pb_avatar.Size = new System.Drawing.Size(381, 481);
             this.pb_avatar.TabIndex = 129;
             this.pb_avatar.TabStop = false;
+            this.pb_avatar.Click += new System.EventHandler(this.pb_avatar_Click);
             // 
             // btn_save
             // 
@@ -155,6 +138,7 @@
             this.btn_save.TabIndex = 127;
             this.btn_save.Text = "Thêm mới";
             this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // btn_changePass
             // 
@@ -172,6 +156,7 @@
             this.btn_changePass.TabIndex = 128;
             this.btn_changePass.Text = "Làm mới";
             this.btn_changePass.UseVisualStyleBackColor = false;
+            this.btn_changePass.Click += new System.EventHandler(this.btn_changePass_Click);
             // 
             // lbl_checkPass
             // 
@@ -184,6 +169,7 @@
             this.lbl_checkPass.Size = new System.Drawing.Size(10, 15);
             this.lbl_checkPass.TabIndex = 125;
             this.lbl_checkPass.Text = " ";
+            this.lbl_checkPass.Validated += new System.EventHandler(this.txt_validatePass_Validated);
             // 
             // lbl_validateUsername
             // 
@@ -196,6 +182,7 @@
             this.lbl_validateUsername.Size = new System.Drawing.Size(10, 15);
             this.lbl_validateUsername.TabIndex = 126;
             this.lbl_validateUsername.Text = " ";
+            this.lbl_validateUsername.Validated += new System.EventHandler(this.txt_username_Validated);
             // 
             // label5
             // 
@@ -237,6 +224,7 @@
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(250, 27);
             this.txt_username.TabIndex = 122;
+            this.txt_username.Validated += new System.EventHandler(this.txt_username_Validated);
             // 
             // label3
             // 
@@ -289,6 +277,36 @@
             this.label2.TabIndex = 120;
             this.label2.Text = "Họ và tên";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.pb_img_del);
+            this.tabPage2.Controls.Add(this.btn_free_part);
+            this.tabPage2.Controls.Add(this.lbl_username_del);
+            this.tabPage2.Controls.Add(this.lbl_maTK_del);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.Giơi);
+            this.tabPage2.Controls.Add(this.btn_del);
+            this.tabPage2.Controls.Add(this.dataGridView_del);
+            this.tabPage2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1056, 552);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Xóa tài khoản";
+            // 
+            // pb_img_del
+            // 
+            this.pb_img_del.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pb_img_del.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pb_img_del.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_img_del.Location = new System.Drawing.Point(132, -7);
+            this.pb_img_del.Name = "pb_img_del";
+            this.pb_img_del.Size = new System.Drawing.Size(164, 185);
+            this.pb_img_del.TabIndex = 211;
+            this.pb_img_del.TabStop = false;
+            // 
             // btn_free_part
             // 
             this.btn_free_part.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -307,6 +325,17 @@
             this.btn_free_part.Text = "Xóa id trong bộ nhớ";
             this.btn_free_part.UseVisualStyleBackColor = false;
             this.btn_free_part.Click += new System.EventHandler(this.btn_free_part_Click);
+            // 
+            // lbl_username_del
+            // 
+            this.lbl_username_del.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_username_del.AutoSize = true;
+            this.lbl_username_del.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_username_del.Location = new System.Drawing.Point(434, 45);
+            this.lbl_username_del.Name = "lbl_username_del";
+            this.lbl_username_del.Size = new System.Drawing.Size(159, 20);
+            this.lbl_username_del.TabIndex = 209;
+            this.lbl_username_del.Text = "Kích đúp hàng cần xóa";
             // 
             // lbl_maTK_del
             // 
@@ -370,28 +399,6 @@
             this.dataGridView_del.TabIndex = 197;
             this.dataGridView_del.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_del_CellDoubleClick);
             // 
-            // lbl_username_del
-            // 
-            this.lbl_username_del.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_username_del.AutoSize = true;
-            this.lbl_username_del.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_username_del.Location = new System.Drawing.Point(434, 45);
-            this.lbl_username_del.Name = "lbl_username_del";
-            this.lbl_username_del.Size = new System.Drawing.Size(159, 20);
-            this.lbl_username_del.TabIndex = 209;
-            this.lbl_username_del.Text = "Kích đúp hàng cần xóa";
-            // 
-            // pb_img_del
-            // 
-            this.pb_img_del.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pb_img_del.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pb_img_del.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pb_img_del.Location = new System.Drawing.Point(132, -7);
-            this.pb_img_del.Name = "pb_img_del";
-            this.pb_img_del.Size = new System.Drawing.Size(164, 185);
-            this.pb_img_del.TabIndex = 211;
-            this.pb_img_del.TabStop = false;
-            // 
             // frm_createAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,16 +407,16 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "frm_createAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_createAccount";
+            this.Text = "Quản lý tài khoản đăng nhập";
             this.Load += new System.EventHandler(this.frm_createAccount_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_del)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_del)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_del)).EndInit();
             this.ResumeLayout(false);
 
         }

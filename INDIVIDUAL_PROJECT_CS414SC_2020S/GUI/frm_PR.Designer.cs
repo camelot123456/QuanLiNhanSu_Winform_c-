@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_PR));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_maluong_part = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txt_songay_part = new System.Windows.Forms.ComboBox();
             this.txt_sogio = new System.Windows.Forms.ComboBox();
             this.btn_free_part = new System.Windows.Forms.Button();
@@ -48,6 +51,9 @@
             this.Giơi = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_maluong_full = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.txt_songay = new System.Windows.Forms.ComboBox();
             this.btn_free_full = new System.Windows.Forms.Button();
             this.btn_del_full = new System.Windows.Forms.Button();
@@ -66,12 +72,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txt_luongcb = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbl_maluong_part = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lbl_maluong_full = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_part)).BeginInit();
@@ -114,6 +114,22 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Name = "label2";
+            // 
+            // lbl_maluong_part
+            // 
+            resources.ApplyResources(this.lbl_maluong_part, "lbl_maluong_part");
+            this.lbl_maluong_part.Name = "lbl_maluong_part";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // txt_songay_part
             // 
@@ -318,6 +334,22 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Name = "label4";
+            // 
+            // lbl_maluong_full
+            // 
+            resources.ApplyResources(this.lbl_maluong_full, "lbl_maluong_full");
+            this.lbl_maluong_full.Name = "lbl_maluong_full";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
             // txt_songay
             // 
             resources.ApplyResources(this.txt_songay, "txt_songay");
@@ -468,38 +500,6 @@
             // 
             resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Name = "label2";
-            // 
-            // lbl_maluong_part
-            // 
-            resources.ApplyResources(this.lbl_maluong_part, "lbl_maluong_part");
-            this.lbl_maluong_part.Name = "lbl_maluong_part";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Name = "label4";
-            // 
-            // lbl_maluong_full
-            // 
-            resources.ApplyResources(this.lbl_maluong_full, "lbl_maluong_full");
-            this.lbl_maluong_full.Name = "lbl_maluong_full";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
             // 
             // frm_PR
             // 
